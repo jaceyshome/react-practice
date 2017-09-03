@@ -94,7 +94,6 @@ class ArticlePage extends Page {
     }
 
     renderArticleBlock(article) {
-        console.log(article);
         return _.map(article.body, (contentId)=> {
             return (
                 <ArticleComponent

@@ -1,0 +1,101 @@
+@import "../../../styles/variables";
+
+/*
+ * Introduction panel
+ * Style guide: Components.Container
+*/
+.b-introduction {
+    position: relative;
+    z-index: $introduction-zindex;
+    background-color: $color-brand-orange;
+    margin-top: -100px;
+    padding: 90px 0 80px 20px;
+
+    @media ($mobile-landscape-up) {
+        padding: 90px 40px 80px 60px;
+    }
+
+    @media ($tablet-up) {
+        padding: 90px 40px 80px 100px;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__title {
+        line-height: 1.25;
+        color: $font-color-white;
+        font-size: 38px;
+
+        @media ($mobile-landscape-up) {
+            font-size: 50px;
+        }
+
+    }
+
+    &--tight {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    //For projects page
+    &--extra-right-space {
+
+        @media ($small-desktop-up) {
+            padding-right: 380px;
+        }
+
+    }
+
+    &--light {
+        background-color: $color-bg-default;
+        color: $font-color-dark-grey;
+
+        .b-introduction__title {
+            color: $font-color-orange;
+        }
+
+        .b-text--bold {
+            color: $font-color-dark;
+        }
+
+        //FIXME: it is not a good way, but restrict in the b-introduction--light scope
+        strong, b {
+            color: $font-color-dark;
+        }
+
+    }
+
+    &--top-no-space {
+        padding-top: 0;
+    }
+
+    &--normal {
+        margin-top: 0;
+    }
+
+    &--double-padding-bottom {
+        padding-bottom: $module-spacing * 1.5;
+
+        @media($large-desktop-up) {
+            padding-bottom: $module-spacing * 2;
+        }
+    }
+
+    &--offset-top {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            bottom: -1px; //-1px to avoid the gap in ipad landscape view
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            content: '';
+        }
+    }
+
+
+}

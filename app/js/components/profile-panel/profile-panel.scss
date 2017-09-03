@@ -1,0 +1,40 @@
+
+.b-profile-panel {
+
+    &__content-holder {
+        transition: $animation-speed-fast;
+        position: relative;
+        box-sizing: border-box;
+        z-index: 2;
+        background-color: rgba(255, 105, 0, 0.9);
+        padding: $studio-team-panel-padding;
+        opacity: 0;
+
+        &--square {
+            min-height: 400px;
+
+            @media ($small-desktop-up) {
+                min-height: 600px;
+            }
+        }
+
+        &--ratio-3-2 {
+            min-height: 400px;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    &__title {
+        font-size: 40px;
+    }
+
+    &__image-holder {
+        z-index: 1;
+    }
+
+
+}

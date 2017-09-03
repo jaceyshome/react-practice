@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+/*
+Paragraph text
+
+Defines the base font size and spacing for regular paragraph text.
+
+.b-paragraph--no-spacing: Sets the margins to zero (0)
+
+Markup: demo.paragraph.html
+
+Style guide: Base.Paragraph
+*/
+
+.b-paragraph {
+    margin-bottom: $paragraph-spacing;
+
+    &--no-spacing {
+        margin: 0;
+
+        //FIXME bad practice, it is for the content data
+        p {
+            margin:  0;
+        }
+    }
+
+    &--tiny-space {
+        margin: 10px 0;
+
+        //FIXME bad practice, it is for the content data
+        p {
+            margin: 10px 0;
+        }
+    }
+
+}

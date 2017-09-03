@@ -1,0 +1,60 @@
+@import "../../../styles/variables";
+
+/*
+Title
+
+Titles are specialised headings or heading-like elements with a distinct visual style, intended specifically used as
+the title of a page or component.
+
+.b-title--h1 - Level 1 content heading
+.b-title--h2 - Level 2 content heading
+.b-title--h3 - Level 3 content heading
+.b-title--h4 - Level 4 content heading
+.b-title--h5 - Level 5 content heading
+.b-title--first - Removes the leading (top) margin from the title
+
+Markup: <p class="b-title {{modifier_class}}">This is a title</p>
+
+Style guide: Base.Title
+*/
+.b-title {
+
+    font-family: $font-family-bold;
+    font-weight: bold;
+
+    &--first {
+        margin-top: 0;
+    }
+
+    &--h1 {
+        line-height: 70px;
+        font-size: 60px;
+    }
+
+    &--h2 {
+        margin-top: 0;
+        margin-bottom: 35px;
+        line-height: 50px;
+        font-size: 50px;
+    }
+
+    &--h3 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        line-height: 1;
+        font-size: 28px;
+    }
+
+    &--h4 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    &--h5 {
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+}

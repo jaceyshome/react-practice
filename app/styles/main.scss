@@ -1,0 +1,63 @@
+@import "vendors";
+@import "bem-utils";
+@import "mixins";
+@import "variables";
+@import "fonts";
+
+//FIXME: not sure why the avalanche css grid--flush not working
+.grid--flush {
+    margin-left:  0;
+}
+
+.grid__cell {
+    .grid--flush & {
+        padding-left: 0;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: $font-size-default;
+    font-family: $font-family-default;
+    background-color: $color-bg-default;
+}
+
+p {
+    margin: $paragraph-spacing 0 $paragraph-spacing 0;
+    line-height: 1.4;
+}
+
+a {
+    color: $font-color-dark;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+@import "../js/components/components";

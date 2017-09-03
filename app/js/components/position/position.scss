@@ -1,0 +1,65 @@
+@import "../../../styles/variables";
+
+/*
+Position block
+
+Generic positioning of container blocks and child elements.
+
+.b-position__container - parent positioned relatively
+.b-position__pull-right - make the element to float right
+.b-position__pull-left - make the element to float left
+
+Markup:
+<div class="b-position__container b-box b-box--red">
+    My component
+    <i class="b-icon b-icon--logo b-position__child b-position__child--top b-position__child--right"></i>
+</div>
+
+Style guide: Layout.Position
+*/
+.b-position {
+
+    &__container {
+        position: relative;
+    }
+
+    &__child {
+        position: absolute;
+
+        &--top {
+            top: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+
+        &--bottom {
+            bottom: 0;
+        }
+
+        &--left {
+            left: 0;
+        }
+
+        &--centre {
+            left: 50%;
+        }
+    }
+
+    &__wrapper {
+        overflow: auto;
+    }
+
+    //TODO: fix pull right and pull left, should be modifiers
+    &__pull-right {
+        float: right;
+    }
+
+    &__pull-left {
+        float: left;
+    }
+
+
+
+}

@@ -1,0 +1,7 @@
+@import "variables";
+@import "mixins";
+
+// Antwerp
+@include font('Circular Std', 'CircularStd-Medium', '#{$font-path}');
+@include font('Circular Std Bold', 'CircularStd-Bold', '#{$font-path}');
+@include font('Circular Std Book', 'CircularStd-Book', '#{$font-path}');

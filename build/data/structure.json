@@ -1,0 +1,683 @@
+{
+
+    "socialShareGroup": {
+        "facebook" : { "link": "www.facebook.com" },
+        "linkedin" : { "link": "www.facebook.com" },
+        "twitter" : { "link": "www.facebook.com" }
+    },
+
+    "pages": {
+        "home": {
+            "navigationTitle": "home",
+            "heroPanel": [
+                {
+                    "image": "images/demo/1.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/3.jpg"
+                },
+                {
+                    "image": "images/demo/4.jpg"
+                }
+            ],
+            "introductionPanel": {
+                "title": "home_intro_title",
+                "highlight": "home_intro_highlight",
+                "bodyText": "home_intro_text"
+            },
+            "projectListPanel": {
+                "left": [
+                    {
+                        "navigationTitle": "project_1_navigationTitle",
+                        "title": "project_1_title",
+                        "text": "project_1_brief",
+                        "image": "project_1_image",
+                        "displayMode": "vertical"
+                    }
+                ],
+                "right": [
+                    {
+                        "navigationTitle": "project_2_navigationTitle",
+                        "title": "project_2_title",
+                        "text": "project_2_brief",
+                        "image": "project_2_image"
+                    },
+                    {
+                        "navigationTitle": "project_3_navigationTitle",
+                        "title": "project_3_title",
+                        "text": "project_3_brief",
+                        "image": "project_3_image",
+                        "displayMode": "vertical"
+                    }
+                ]
+            }
+        },
+
+        "projects": {
+            "navigationTitle": "projects",
+            "introductionPanel": {
+                "title": "project_intro_title",
+                "highlight": "project_intro_highlight"
+            },
+            "projectListPanel": [
+                {
+                    "navigationTitle": "project_1_navigationTitle",
+                    "title": "project_1_title",
+                    "subTitle": "project_1_subTitle",
+                    "image": "project_1_image"
+                },
+                {
+                    "navigationTitle": "project_2_navigationTitle",
+                    "title": "project_2_title",
+                    "subTitle": "project_2_subTitle",
+                    "image": "project_2_image"
+                },
+                {
+                    "navigationTitle": "project_3_navigationTitle",
+                    "title": "project_3_title",
+                    "subTitle": "project_3_subTitle",
+                    "image": "project_3_image",
+                    "displayMode": "vertical"
+                },
+                {
+                    "navigationTitle": "project_4_navigationTitle",
+                    "title": "project_4_title",
+                    "subTitle": "project_4_subTitle",
+                    "image": "project_4_image"
+                },
+                {
+                    "navigationTitle": "project_5_navigationTitle",
+                    "title": "project_5_title",
+                    "subTitle": "project_5_subTitle",
+                    "image": "project_5_image",
+                    "displayMode": "vertical"
+                },
+                {
+                    "navigationTitle": "project_6_navigationTitle",
+                    "title": "project_6_title",
+                    "subTitle": "project_6_subTitle",
+                    "image": "project_6_image"
+                },
+                {
+                    "navigationTitle": "project_1_navigationTitle",
+                    "title": "project_1_title",
+                    "subTitle": "project_1_subTitle",
+                    "image": "project_1_image"
+                },
+                {
+                    "navigationTitle": "project_2_navigationTitle",
+                    "title": "project_2_title",
+                    "subTitle": "project_2_subTitle",
+                    "image": "project_2_image"
+                },
+                {
+                    "navigationTitle": "project_3_navigationTitle",
+                    "title": "project_3_title",
+                    "subTitle": "project_3_subTitle",
+                    "image": "project_3_image",
+                    "displayMode": "vertical"
+                },
+                {
+                    "navigationTitle": "project_4_navigationTitle",
+                    "title": "project_4_title",
+                    "subTitle": "project_4_subTitle",
+                    "image": "project_4_image"
+                },
+                {
+                    "navigationTitle": "project_5_navigationTitle",
+                    "title": "project_5_title",
+                    "subTitle": "project_5_subTitle",
+                    "image": "project_5_image"
+                }
+            ]
+        },
+
+        "practice": {
+            "navigationTitle": "practice",
+            "heroPanel": [
+                {
+                    "image": "images/demo/1.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/3.jpg"
+                },
+                {
+                    "image": "images/demo/4.jpg"
+                }
+            ],
+            "introductionPanel": {
+                "title": "practice_intro_title",
+                "highlight": "practice_intro_highlight",
+                "bodyText": "practice_intro_text"
+            },
+            "diagram": "images/demo/4.jpg",
+            "summaryPanel": {
+                "image": "images/demo/practice.png",
+                "title": "practice_summary_title",
+                "highlight": "practice_summary_highlight",
+                "bodyText": "practice_summary_text"
+            },
+            "projectListPanel": {
+                "left": [
+                    {
+                        "navigationTitle": "project_1_navigationTitle",
+                        "title": "project_1_title",
+                        "text": "project_1_brief",
+                        "image": "project_1_image"
+                    },
+                    {
+                        "navigationTitle": "project_2_navigationTitle",
+                        "title": "project_2_title",
+                        "text": "project_2_brief",
+                        "image": "project_2_image",
+                        "displayMode": "vertical"
+                    }
+                ],
+                "right": [
+                    {
+                        "navigationTitle": "project_3_navigationTitle",
+                        "title": "project_3_title",
+                        "text": "project_3_brief",
+                        "image": "project_3_image",
+                        "displayMode": "vertical"
+                    }
+                ]
+            }
+        },
+
+        "studio": {
+            "navigationTitle": "studio",
+            "introductionPanel": {
+                "title": "studio_intro_title",
+                "highlight": "studio_intro_highlight"
+            },
+            "descriptionPanel": {
+                "bodyText" : "studio_description_text"
+            },
+            "teamMembersPanel": {
+                "header": {
+                    "title" : "team_member_title",
+                    "highlight" : "team_member_highlight"
+                },
+                "profileList": [
+                    {
+                        "image": "team_member_1_image",
+                        "title" : "team_member_1_title",
+                        "subtitle" : "team_member_1_subtitle",
+                        "email" : "team_member_1_email",
+                        "introduction" : "team_member_1_introduction",
+                        "description": "team_member_1_description",
+                        "desktopColumn": "left",
+                        "displayMode": "vertical"
+                    },
+                    {
+                        "image": "team_member_2_image",
+                        "title" : "team_member_2_title",
+                        "subtitle" : "team_member_2_subtitle",
+                        "email" : "team_member_2_email",
+                        "introduction" : "team_member_2_introduction",
+                        "description": "team_member_2_description",
+                        "desktopColumn": "right"
+                    },
+                    {
+                        "image": "team_member_3_image",
+                        "title" : "team_member_3_title",
+                        "subtitle" : "team_member_3_subtitle",
+                        "email" : "team_member_3_email",
+                        "introduction" : "team_member_3_introduction",
+                        "description": "team_member_3_description",
+                        "desktopColumn": "left"
+                    },{
+                        "image": "team_member_4_image",
+                        "title" : "team_member_4_title",
+                        "subtitle" : "team_member_4_subtitle",
+                        "email" : "team_member_4_email",
+                        "introduction" : "team_member_4_introduction",
+                        "description": "team_member_4_description",
+                        "desktopColumn": "right"
+                    },{
+                        "image": "team_member_5_image",
+                        "title" : "team_member_5_title",
+                        "subtitle" : "team_member_5_subtitle",
+                        "email" : "team_member_5_email",
+                        "introduction" : "team_member_5_introduction",
+                        "description": "team_member_5_description",
+                        "desktopColumn": "left"
+                    }
+                ],
+                "footer": {
+                    "title": "team_member_end_title",
+                    "subtitle": "team_member_end_highlight",
+                    "bodyText": "team_member_end_description",
+                    "email": "team_member_end_email",
+                    "phone": "team_member_end_phone"
+                }
+            }
+        },
+
+        "connect": {
+            "navigationTitle": "connect",
+            "introductionPanel": {
+                "title": "connect_intro_title",
+                "highlight": "connect_intro_highlight"
+            },
+            "contactPanel" : {
+                "bodyText" : "connect_contact_detail"
+            }
+        },
+
+        "media": {
+            "navigationTitle": "media",
+            "introductionPanel": {
+                "title": "media_intro_title",
+                "highlight": "media_intro_highlight"
+            },
+            "articleListPanel": [
+                {
+                    "navigationTitle": "media_project_1_navigationTitle",
+                    "title": "media_project_1_intro_title",
+                    "subTitle": "media_project_1_intro_subTitle",
+                    "image": "media_project_1_intro_image",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_1_article_title",
+                        "body": [
+                            "media_project_1_article_text_1",
+                            "media_project_1_article_image_1",
+                            "media_project_1_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_2_navigationTitle",
+                    "title": "media_project_2_intro_title",
+                    "subTitle": "media_project_2_intro_subTitle",
+                    "image": "media_project_2_intro_image",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_2_article_title",
+                        "body": [
+                            "media_project_2_article_text_1",
+                            "media_project_2_article_image_1",
+                            "media_project_2_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_3_navigationTitle",
+                    "title": "media_project_3_intro_title",
+                    "subTitle": "media_project_3_intro_subTitle",
+                    "image": "media_project_3_intro_image",
+                    "displayMode": "vertical",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_3_article_title",
+                        "body": [
+                            "media_project_3_article_text_1",
+                            "media_project_3_article_image_1",
+                            "media_project_3_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_4_navigationTitle",
+                    "title": "media_project_4_intro_title",
+                    "subTitle": "media_project_4_intro_subTitle",
+                    "image": "media_project_4_intro_image",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_4_article_title",
+                        "body": [
+                            "media_project_4_article_text_1",
+                            "media_project_4_article_image_1",
+                            "media_project_4_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_5_navigationTitle",
+                    "title": "media_project_5_intro_title",
+                    "subTitle": "media_project_5_intro_subTitle",
+                    "text": "media_project_5_intro_text",
+                    "displayMode": "vertical",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_5_article_title",
+                        "body": [
+                            "media_project_5_article_text_1",
+                            "media_project_5_article_image_1",
+                            "media_project_5_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_6_navigationTitle",
+                    "title": "media_project_6_intro_title",
+                    "subTitle": "media_project_6_intro_subTitle",
+                    "text": "media_project_6_intro_text",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_6_article_title",
+                        "body": [
+                            "media_project_6_article_text_1",
+                            "media_project_6_article_image_1",
+                            "media_project_6_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_7_navigationTitle",
+                    "title": "media_project_7_intro_title",
+                    "subTitle": "media_project_7_intro_subTitle",
+                    "image": "media_project_7_intro_image",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_7_article_title",
+                        "body": [
+                            "media_project_7_article_text_1",
+                            "media_project_7_article_image_1",
+                            "media_project_7_article_text_2"
+                        ]
+                    }
+                },
+                {
+                    "navigationTitle": "media_project_8_navigationTitle",
+                    "title": "media_project_8_intro_title",
+                    "subTitle": "media_project_8_intro_subTitle",
+                    "text": "media_project_8_intro_text",
+                    "article": {
+                        "heroPanel": [
+                            {
+                                "image": "images/demo/1.jpg"
+                            },
+                            {
+                                "image": "images/demo/2.jpg"
+                            },
+                            {
+                                "image": "images/demo/3.jpg"
+                            },
+                            {
+                                "image": "images/demo/4.jpg"
+                            }
+                        ],
+                        "title": "media_project_8_article_title",
+                        "body": [
+                            "media_project_8_article_text_1",
+                            "media_project_8_article_image_1",
+                            "media_project_8_article_text_2"
+                        ]
+                    }
+                }
+            ]
+
+        }
+    },
+
+    "projectsList" : [
+        {
+            "navigationTitle": "project_1_detail_navigationTitle",
+            "heroPanel": [
+                {
+                    "image": "images/demo/1.jpg"
+                },
+                {
+                    "image": "images/demo/1.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                }
+            ],
+            "introductionPanel" : {
+                "title": "project_1_detail_title",
+                "bodyText": "project_1_detail_introduction"
+            },
+            "textPanel": {
+                "highlight": "project_1_detail_highlight",
+                "bodyText": "project_1_detail_text"
+            }
+        },
+        {
+            "navigationTitle": "project_2_detail_navigationTitle",
+            "displayMode": "smallHero",
+            "heroPanel": [
+                {
+                    "image": "images/demo/3.jpg"
+                },
+                {
+                    "image": "images/demo/1.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/4.jpg"
+                }
+            ],
+            "introductionPanel" : {
+                "title": "project_2_detail_title",
+                "bodyText": "project_2_detail_introduction"
+            },
+            "textPanel": {
+                "highlight": "project_2_detail_highlight",
+                "bodyText": "project_2_detail_text"
+            }
+        },
+        {
+            "navigationTitle": "project_3_detail_navigationTitle",
+            "heroPanel": [
+                {
+                    "image": "images/demo/4.jpg"
+                },
+                {
+                    "image": "images/demo/1.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/3.jpg"
+                }
+            ],
+            "introductionPanel" : {
+                "title": "project_3_detail_title",
+                "bodyText": "project_3_detail_introduction"
+            },
+            "textPanel": {
+                "highlight": "project_3_detail_highlight",
+                "bodyText": "project_3_detail_text"
+            }
+        },
+        {
+            "navigationTitle": "project_4_detail_navigationTitle",
+            "heroPanel": [
+                {
+                    "image": "images/demo/4.jpg"
+                },
+                {
+                    "image": "images/demo/4.jpg"
+                },
+                {
+                    "image": "images/demo/3.jpg"
+                },
+                {
+                    "image": "images/demo/1.jpg"
+                }
+            ],
+            "introductionPanel" : {
+                "title": "project_4_detail_title",
+                "bodyText": "project_4_detail_introduction"
+            },
+            "textPanel": {
+                "highlight": "project_4_detail_highlight",
+                "bodyText": "project_4_detail_text"
+            }
+        },
+        {
+            "navigationTitle": "project_5_detail_navigationTitle",
+            "heroPanel": [
+                {
+                    "image": "images/demo/3.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/4.jpg"
+                },
+                {
+                    "image": "images/demo/1.jpg"
+                }
+            ],
+            "introductionPanel" : {
+                "title": "project_5_detail_title",
+                "bodyText": "project_5_detail_introduction"
+            },
+            "textPanel": {
+                "highlight": "project_5_detail_highlight",
+                "bodyText": "project_5_detail_text"
+            }
+        },
+        {
+            "navigationTitle": "project_6_detail_navigationTitle",
+            "heroPanel": [
+                {
+                    "image": "images/demo/4.jpg"
+                },
+                {
+                    "image": "images/demo/3.jpg"
+                },
+                {
+                    "image": "images/demo/2.jpg"
+                },
+                {
+                    "image": "images/demo/1.jpg"
+                }
+            ],
+            "introductionPanel" : {
+                "title": "project_6_detail_title",
+                "bodyText": "project_6_detail_introduction"
+            },
+            "textPanel": {
+                "highlight": "project_6_detail_highlight",
+                "bodyText": "project_6_detail_text"
+            }
+        }
+    ],
+
+    "footer": {
+        "copyright": "footer_copyright",
+        "contactDetails" : [
+            {
+                "location" : "footer_details_1_location",
+                "details" : "footer_details_1_details"
+            },
+            {
+                "location" : "footer_details_2_location",
+                "details" : "footer_details_2_details"
+            }
+        ],
+        "contactEmail": "footer_details_email"
+    }
+
+
+}

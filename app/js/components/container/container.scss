@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+/*
+Page main container, it uses to restrict the size of the content body
+
+<b>b-form-container__wrapper</b><br/>
+It wraps main content body in a max width zone
+
+
+Style guide: Layout.Container
+*/
+.b-container {
+
+    &__wrapper {
+        position: relative;
+        margin: auto;
+        padding-left: $paragraph-spacing;
+        padding-right: $paragraph-spacing;
+        max-width: $page-container-max-width;
+
+        @media ($large-desktop-up) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &--no-space {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+}

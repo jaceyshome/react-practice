@@ -1,0 +1,63 @@
+/**
+* Box block controls the box padding space in different sides
+*/
+
+.b-box {
+
+    &--loose-top {
+        padding-top: $module-spacing;
+    }
+
+    &--loose-right {
+        padding-right: 0;
+
+        @media ($mobile-landscape-up) {
+            padding-right: $module-spacing;
+        }
+    }
+
+    &--loose-left {
+        padding-left: 0;
+
+        @media ($mobile-landscape-up) {
+            padding-left: $module-spacing;
+        }
+    }
+
+    &--loose-bottom {
+        padding-bottom: $module-mobile-spacing;
+
+        @media ($mobile-landscape-up) {
+            padding-bottom: $module-spacing;
+        }
+    }
+
+    &--tight-top {
+        padding-top: $paragraph-spacing * 2;
+    }
+
+    &--tight-bottom {
+        padding-bottom: $paragraph-spacing * 2;
+    }
+
+    &--half-loose-top {
+        padding-top: $module-spacing / 2;
+    }
+
+    &--half-loose-left {
+        padding-left: $module-spacing / 2;
+    }
+
+    &--tiny-left {
+        padding-left: 10px;
+    }
+
+    &--tiny-right {
+        padding-right: 10px;
+    }
+
+    &--orange-bg {
+        background-color: $color-brand-orange;
+    }
+
+}

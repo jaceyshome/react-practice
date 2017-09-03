@@ -1,0 +1,63 @@
+
+/**
+*  home page featured project
+*/
+.b-featured-project {
+
+    width: auto;
+
+    &--vertical {
+
+        @media ($tablet-up) {
+            max-width: 350px;
+        }
+
+        @media ($small-desktop-up) {
+            max-width: 450px;
+        }
+
+        @media ($large-desktop-up) {
+            max-width: 500px;
+        }
+
+        //TODO this is hack, need to have discussion
+        .b-page--practice .b-featured-project-list__column--right & {
+            float: right;
+        }
+    }
+
+    &--landscape {
+
+        @media ($tablet-up) {
+            max-width: 400px;
+        }
+
+        @media ($small-desktop-up) {
+            max-width: 550px;
+        }
+
+        @media ($large-desktop-up) {
+            max-width: 600px;
+        }
+    }
+
+    &__image {
+        margin-bottom: 44px;
+    }
+
+    &__icon {
+        opacity: 0;
+        top: 4px;
+    }
+
+    .b-link-figure & {
+
+        &:hover,
+        &:focus {
+            .b-featured-project__icon {
+                opacity: 1;
+            }
+        }
+    }
+}
+

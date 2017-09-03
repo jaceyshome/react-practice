@@ -1,0 +1,84 @@
+@import "../../../styles/variables";
+
+/*
+Text
+
+Generic text modifiers for setting things like colour.
+
+.b-text--align-left - Left-aligns the text
+.b-text--align-right - Right-aligns the text
+.b-text--align-centre - Centre-aligns the text
+.b-text--bold - Bold text
+.b-text--colour-light - Makes text a light colour, according to the theme (e.g. white)
+.b-text--colour-dark - Makes text a dark colour, according to the theme (e.g. black)
+.b-text--colour-orange - Makes text an orange colour, it is for the orange colour text
+.b-text--size-base - Makes the text default body size (14px)
+.b-text--size-large - Makes the text large (16px)
+.b-text--size-larger - Makes the text larger (20px)
+.b-text--upper - Uppercase the text
+
+Markup: demo.text.html
+
+Style guide: Base.Text
+*/
+.b-text {
+
+    &--align-left {
+        text-align: left;
+    }
+
+    &--align-right {
+        text-align: right;
+    }
+
+    &--align-centre {
+        text-align: center;
+    }
+
+    &--bold {
+        font-family: $font-family-bold;
+        font-weight: bold;
+    }
+
+    &--size-base {
+        font-size: $font-size-default;
+    }
+
+    &--size-mid-large {
+        font-size: 16px;
+    }
+
+    &--size-large {
+        font-size: 18px;
+    }
+
+    &--size-larger {
+        font-size: 20px;
+    }
+
+    &--size-largest {
+        font-size: 24px;
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+
+    &--color-dark {
+        color: $font-color-dark;
+    }
+
+    &--color-dark-grey {
+        color: $font-color-dark-grey;
+    }
+
+    &--color-white {
+        color: $font-color-white;
+    }
+
+    &--color-orange {
+        color: $font-color-orange;
+    }
+}
+
+

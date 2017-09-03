@@ -1,0 +1,72 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+/*
+Figure
+
+Represents an illustration, usually accompanying a body of text. The figure can be positioned relative to the
+text, occupy a certain amount of space and optionally have an accompanying caption. Includes percentage width
+helpers for CMS-authored content.
+
+Markup: demo.figure.html
+
+Style guide: Blocks.Figure
+*/
+
+/*
+Figure (Responsive image)
+
+Represents figure with responsive image (Switching between 2 images desktop and vertical tablet/mobile).
+
+Markup: demo.figure.responsive.html
+
+Style guide: Blocks.Figure.Responsive
+*/
+
+/*
+Bleed image (auto-bleed)
+
+Markup: demo.figure.bleed-style.auto.html
+
+Style guide: Blocks.Bleed.Auto
+*/
+
+/*
+Bleed image (bleed left/right)
+
+.b-box--bleed-left - Box bleeds out to the left
+.b-box--bleed-right - Box bleeds out to the right
+
+Markup: demo.figure.bleed-style-lr.html
+
+Style guide: Components.Bleed
+*/
+
+.b-figure {
+    max-width: 100%;  //FIXME: Not sure what reason for the max-width 100%
+
+    &--pull-right {
+        float: right;
+        padding-left: 20px;
+    }
+
+    &--pull-left {
+        float: left;
+        padding-right: 20px;
+    }
+
+    // Create width modifiers from 5-100% in 5% increments (e.g. 5%, 10%, 15% ... 95%, 100%)
+    @for $step from 1 through 20 {
+        $percent: $step * 5%;
+
+        &--width-#{$percent} {
+            width: $percent;
+            @if ($percent == 100%) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+
+
+}

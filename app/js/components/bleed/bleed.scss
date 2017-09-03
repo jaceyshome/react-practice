@@ -1,0 +1,62 @@
+/*
+* Bleed component
+*
+*/
+
+
+.b-bleed {
+
+    @mixin panel-bleed {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: $color-brand-orange;
+            z-index: 1;
+            width: 1000%;
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            background-color: $color-bg-default;
+            z-index: 2;
+            width: 1000%;
+            height: 100px;
+            content: '';
+        }
+
+
+    }
+
+    &--panel-left {
+
+        @include panel-bleed;
+
+        &::after,
+        &::before {
+            right: 100%;
+        }
+    }
+
+    &--panel-right {
+
+        @include panel-bleed;
+
+        &::after,
+        &::before {
+            left: 100%;
+        }
+    }
+
+    &--light {
+
+        &::before,
+        &::after {
+            background-color: $color-bg-default;
+        }
+    }
+}

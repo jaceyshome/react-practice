@@ -1,0 +1,64 @@
+@import "../../../styles/variables";
+
+/*
+Component block
+
+Applies vertical spacing between components.
+
+.b-component--loose - Increased spacing
+.b-component--tight - Reduced spacing
+
+Markup:
+<div style="background:lightpink;">
+    <div class="b-component {{modifier_class}} b-box b-box--grey" style="height:100px;">My component</div>
+    <p>Next component</p>
+</div>
+
+Style guide: Layout.Component
+*/
+.b-component {
+
+    margin-bottom: $module-spacing;
+
+    &--loose {
+        margin-bottom: $module-spacing * 1.5;
+    }
+
+    &--tight {
+        margin-bottom: $module-spacing / 2;
+    }
+
+    &--less-tight {
+        margin-bottom: 40px;
+    }
+
+    //For the component which has the paragraph at the bottom paragraph, the paragraph will take 20px margin bottom space
+    &--with-bottom-content {
+        margin-bottom: $module-spacing - $paragraph-spacing + 12px; //12px is extra line-height space
+    }
+
+    &--tiny {
+        margin-bottom: 25px;
+    }
+
+    &--very-tiny {
+        margin-bottom: 15px;
+    }
+
+    &--no-margin-bottom {
+        margin-bottom:  0;
+    }
+
+    &--offset-top {
+        margin-top: -$module-spacing;
+    }
+
+    &--invisible {
+        opacity: 0;
+    }
+
+    &--header-space {
+        padding-top: 256px;
+    }
+
+}

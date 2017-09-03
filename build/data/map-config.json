@@ -1,0 +1,68 @@
+{
+    "zoomLevel": 18,
+    "geolocation": {
+        "lat": -33.8680000,
+        "lng": 151.2054220
+    },
+    "disableDefaultUI": true,
+    "marker": {
+        "position": {
+            "lat": -33.8681520,
+            "lng": 151.2054220
+        },
+        "icon": "http://54.206.21.216/s4b-staging/ga/images/map_marker.png",
+        "defaultAnimation": 2
+    },
+    "infoBox" : {
+        "position": {
+            "lat": -38.680050,
+            "lng": 181.2054820
+        },
+        "text": "<div>Phasellus ullamcorper ipsum</div>"
+    },
+    "style": [
+        {
+            "stylers": [
+                {
+                    "saturation": -100
+                }
+            ]
+        },
+        {
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "saturation": -100
+                }
+            ]
+        },
+        {
+            "featureType": "poi.business",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "lightness": 10
+                },
+                {
+                    "visibility": "off"
+                },
+                {
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "featureType": "poi.business",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "lightness": 10
+                },
+                {
+                    "visibility": "off"
+                }
+            ]
+        }
+    ]
+}
+

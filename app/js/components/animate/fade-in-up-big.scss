@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+@keyframes fadeInUpBigAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+        animation-timing-function: $animation-timing-in-out-quint;
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(800px);
+        animation-timing-function: $animation-timing-in-out-quint;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        animation-timing-function: $animation-timing-in-out-quint;
+    }
+}
+
+.b-animate__fade-in-up-big {
+    animation-name: fadeInUpBigAnimation;
+}

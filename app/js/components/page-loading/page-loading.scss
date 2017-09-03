@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+
+/*
+ * Page loading component
+ * Style guide: Components.Container
+*/
+.b-page-loading {
+    position: fixed;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    &__logo-container {
+        position: relative;
+        top: 48%;
+        margin: auto;
+        text-align: center;
+    }
+}

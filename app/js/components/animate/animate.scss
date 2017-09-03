@@ -1,0 +1,53 @@
+
+.b-animate {
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    &__delay {
+
+        &--200ms { animation-delay: 200ms; }
+        &--300ms { animation-delay: 300ms; }
+        &--400ms { animation-delay: 400ms; }
+        &--500ms { animation-delay: 500ms; }
+        &--600ms { animation-delay: 600ms; }
+        &--700ms { animation-delay: 700ms; }
+        &--800ms { animation-delay: 800ms; }
+        &--900ms { animation-delay: 900ms; }
+        &--1000ms {  animation-delay: 1000ms;  }
+        &--1100ms {  animation-delay: 1100ms;  }
+        &--1200ms {  animation-delay: 1200ms;  }
+        &--1300ms {  animation-delay: 1300ms;  }
+        &--1400ms {  animation-delay: 1400ms;  }
+        &--1500ms {  animation-delay: 1500ms;  }
+        &--1600ms {  animation-delay: 1600ms;  }
+        &--1800ms {  animation-delay: 1800ms;  }
+        &--1800ms {  animation-delay: 1900ms;  }
+
+    }
+
+    &__duration {
+
+        &--fastest { animation-duration: 100ms; }
+        &--faster { animation-duration: 200ms; }
+        &--fast { animation-duration: 400ms; }
+        &--normal { animation-duration: 600ms; }
+        &--slow { animation-duration: 800ms; }
+        &--slower { animation-duration: 1000ms; }
+
+    }
+
+}
+
+@import "fade-in-up-big";
+@import "fade-in-down-big";
+@import "fade-in-left-big";
+@import "fade-in-right-big";
+
+

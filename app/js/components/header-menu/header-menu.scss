@@ -1,0 +1,100 @@
+@import "../../../styles/variables";
+
+.b-header-menu {
+    box-sizing: border-box;
+    padding-top: 54px;
+    width: 300px;
+
+    @media (max-width: 350px) {
+        margin-right: -20px;
+    }
+
+    &__button-group {
+        margin-bottom: 30px;
+        padding: 0 0 0 $component-space;
+        text-align: right;
+    }
+
+    &__list {
+        overflow-y: auto;
+        padding: 0 0 0 $component-space;
+        height: 450px;
+    }
+
+    &__bottom-shape {
+        position: relative;
+        top: $header-menu-triangle-height;
+        margin-top: -$header-menu-triangle-height;
+    }
+
+    &__list-item {
+        padding-right: 5px;
+    }
+
+    &__button {
+        margin-right: 30px;
+        color: $font-color-white;
+        font-size: $font-size-large;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &--close {
+            display: none;
+            font-size: $font-size-small;
+            margin-right: 72px;
+        }
+
+        &--activated {
+            color: $font-color-orange;
+        }
+
+        .b-header--sticky & {
+            color: $font-color-dark;
+        }
+
+    }
+
+    //Animation
+    .b-header-menu__list,
+    .b-header-menu__bottom-shape {
+        transition: $animation-speed-fast;
+        display: none;
+        opacity: 0;
+    }
+
+    &--open {
+        background-color: $font-color-white;
+
+        .b-header-menu__list,
+        .b-header-menu__bottom-shape {
+            transition: $animation-speed-fast;
+            display: block;
+            opacity: 1;
+        }
+
+        .b-header-menu__button {
+            color: $font-color-grey;
+        }
+
+        .b-header-menu__button--close {
+            display: inline;
+            color: $font-color-dark;
+        }
+
+        .b-header-menu__button--activated {
+            color: $font-color-orange;
+        }
+    }
+
+    .b-header--sm-landing-mode & {
+        &__button {
+
+            @media ($tablet-up){
+                color: $font-color-dark;
+            }
+        }
+    }
+
+}

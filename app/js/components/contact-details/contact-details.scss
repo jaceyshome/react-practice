@@ -1,0 +1,24 @@
+/**
+* contact details style
+*
+*/
+
+.b-contact-details {
+
+    &--footer {
+
+        @media ($tablet-up) {
+            padding-top: 5px;
+            padding-left: $module-spacing / 2;
+        }
+    }
+
+    &--connect-page {
+        font-size: $font-size-larger;
+
+        @media ($tablet-up) {
+            padding-left: $module-spacing;
+        }
+    }
+
+}

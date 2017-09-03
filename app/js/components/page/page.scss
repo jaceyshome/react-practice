@@ -1,0 +1,146 @@
+@import "../../../styles/variables";
+
+/*
+Page layout and structure
+
+Style guide: Layout.Page
+*/
+.b-page {
+    position: relative;
+    overflow-x: hidden;
+
+    &__bottom-link-holder {
+        position: relative;
+    };
+
+    &__bottom-link {
+        display: block;
+        margin-bottom: $module-spacing / 2;
+
+        @media ($tablet-up) {
+            position: absolute;
+            bottom: $module-spacing - 5px; //2px is the offset
+            margin-bottom: 0;
+        }
+
+        &--right {
+
+            @media ($tablet-up) {
+                left: 66.667%;
+            }
+        }
+
+    }
+
+    &--practice {
+        //modifier to set the project list style
+        &__introduction {
+            margin-bottom: $module-spacing / 2;
+
+            @media($tablet-up) {
+                padding-left: 60px;
+            }
+
+            @media($lap-and-up) {
+                padding-left: 40px;
+            }
+
+            @media($ipad-landscape-up) {
+                padding-left: 40px;
+            }
+
+            @media($large-desktop-up){
+                padding-left: $module-spacing;
+            }
+        }
+    }
+
+    &--projects {
+
+        &__gallery {
+            margin-top: -50px;
+
+            .grid__cell {
+                padding-left: 40px;
+            }
+        }
+
+
+    }
+
+    &--project {
+
+        &__introduction {
+
+            &--left {
+                margin-bottom:  0;
+                padding-top: 0;
+
+                @media ($tablet-up) {
+                    margin-bottom:  $module-spacing;
+                    padding-top: 57px;
+                    padding-left: 40px;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                }
+
+                @media ($large-desktop-up) {
+                    padding-left: 10px;
+                }
+
+            }
+
+            &--right {
+                padding-bottom: 0;
+                margin-bottom: 0;
+
+                @media ($small-desktop-up) {
+                    margin-bottom: 50px;
+                }
+
+            }
+        }
+
+        &--sm-landing-mode {
+            //For ind project small landscaope image
+        }
+
+        &__hero-wrapper {
+            padding-left: 0;
+            padding-right: 0;
+
+            @media ($tablet-up) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+        }
+    }
+
+    &--connect {
+
+        &__body-panel {
+            position: relative;
+            z-index: $connect-body-panel-zindex;
+        }
+
+        &__body-panel-inner {
+            background-color: $color-bg-default;
+        }
+    }
+
+    &--media {
+
+        &__social-share-group-container {
+
+            background-color:  $color-bg-default;
+
+            &::before {
+                background-color: $color-bg-default;
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,74 @@
+@import "../../../styles/variables";
+
+/*
+Rule
+
+Rules are dividing lines that can be applied to the top or bottom blocks of content, along with padding, to break pages up and provide clear delineation between components. The thickness, darkeness and surrounding
+padding can be controlled with modifiers. The modifiers provided here are based on the various rule styles used by components in the corporate style guide.
+
+## Examples ##
+
+Larger padding and a thick black line on the top of the block:
+
+```
+<div class="b-rule b-rule--heavy-top b-rule--loose-top">
+	This content will have a thick top border with spacious padding underneath.
+</div>
+```
+
+Less padding and a thin, light grey line on the bottom of the block:
+
+```
+<div class="b-rule b-rule--light-bottom b-rule--bright-bottom b-rule--tight-bottom"></div>
+```
+
+Style guide: Base.Rule
+*/
+
+.b-rule {
+    $grey-light: $color-brand-grey;
+
+    &--heavier-top {
+        border-top: 3px solid black;
+    }
+
+    &--heavy-top {
+        border-top: 2px solid black;
+    }
+
+    &--light-top {
+        border-top: 1px solid black;
+    }
+
+    &--heavy-bottom {
+        border-bottom: 2px solid black;
+    }
+
+    &--light-bottom {
+        border-bottom: 1px solid black;
+    }
+
+    &--bright-top {
+        border-top-color: $grey-light;
+    }
+
+    &--bright-bottom {
+        border-bottom-color: $grey-light;
+    }
+
+    &--loose-top {
+        padding-top: $module-spacing;
+    }
+
+    &--loose-bottom {
+        padding-bottom: $module-spacing;
+    }
+
+    &--tight-top {
+        padding-top: $paragraph-spacing;
+    }
+
+    &--tight-bottom {
+        padding-bottom: $paragraph-spacing;
+    }
+}

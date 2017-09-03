@@ -1,0 +1,101 @@
+/*
+ * Footer component
+ * Style guide: Components.footer
+*/
+
+.b-footer {
+
+    $color-bg: $color-brand-light-grey;
+    $logo-alignment-offset: 60px;
+
+    &__top-container {
+        position: relative;
+        background-color: $color-bg-default;
+        padding-bottom: 30px;
+
+        @media ($tablet-up) {
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: $color-bg;
+                top: 0;
+                bottom: 0;
+                left: 100%;
+                width: 1000%;
+            }
+        }
+
+    }
+
+    &__logo-container {
+        position: relative;
+        min-height: 70px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: -20px;
+    }
+
+    &__featured-link {
+        margin-right: 10.6%;
+    }
+
+    &__main-container {
+        background-color: $color-bg;
+    }
+
+    &__container-wrapper {
+        position: relative;
+    }
+
+    &__copyright {
+
+        @media ($tablet-up) {
+            position: absolute;
+            top: 80px;
+        }
+
+    }
+
+    &__column {
+
+        width: 100%;
+
+        &--left {
+
+            @media ($tablet-up) {
+                width: 75.5%;
+            }
+
+        }
+
+        &--right {
+
+            @media ($tablet-up) {
+                width: 24%;
+            }
+        }
+
+    }
+
+    &__navigation-item {
+
+        padding-top: 6px;
+        margin-bottom: 10px;
+
+        @media ($tablet-up) {
+            display: inline-block;
+            margin-left: $paragraph-spacing;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,23 @@
+@keyframes fadeInLeftBigAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: translateX(-600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.b-animate__fade-in-left-big {
+    animation-name: fadeInLeftBigAnimation;
+    /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+
+}

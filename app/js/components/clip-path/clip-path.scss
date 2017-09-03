@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+/*
+ * CSS clip path
+ * http://bennettfeely.com/clippy/
+ * Style guide: Blocks.Clip path
+*/
+
+.b-clip-path {
+
+    &--header-menu-bottom {
+        background-color: $color-bg-default;
+        width: 100%;
+        height: $header-menu-triangle-height + 1px;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 14% 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 100%, 14% 100%, 0 0);
+    }
+
+}

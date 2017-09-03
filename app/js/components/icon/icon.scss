@@ -1,0 +1,65 @@
+@import "../../../styles/bem-utils";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+/*
+Icon
+
+Generic icon with different types (e.g. "b-icon b-icon--search" ). Icons are from two sources, icon font converted from svg and glyphicon font.
+
+<legend>Svg to icon font</legend>
+
+Create SVG/TTF/EOT/WOFF/WOFF2 icon-font and the scss file from SVG icons with Gulp build-iconfont task. See: https://www.npmjs.com/package/gulp-iconfont
+
+<b>Add a new icon</b>
+<ul>
+    <li>Create the svg file for the icon and give the file a proper name, the file name is the css class name (e.g. down-arrow.svg, the css class for the icon is 'b-icon--down-arrow')
+</li>
+    <li>Add the svg file into the '/src/assets/img/icons/svg' folder</li>
+    <li>Run the gulp task 'gulp build-iconfont' in a terminal, it adds the icon into the font files 'src/assets/fonts/icon-font.eot/ttf/woff/woff2', and re-generates the scss file 'src/components/icon/svg2iconfont.scss' via the template 'src/components/icon/template.txt'</li>
+</ul>
+
+
+<b>Update an icon</b>
+<ul>
+    <li>Update the svg file related to the icon in the '/src/assets/img/icons/svg' folder</li>
+    <li>Run the gulp task 'gulp build-iconfont' in a terminal, it updates the font files 'src/assets/fonts/icon-font.eot/ttf/woff/woff2', and re-generates the scss file 'src/components/icon/svg2iconfont.scss' via the template 'src/components/icon/template.txt'</li>
+</ul>
+
+<b>Delete an icon</b>
+<ul>
+    <li>Remove the svg file related to the icon in the '/src/assets/img/icons/svg' folder</li>
+    <li>Run the gulp task 'gulp build-iconfont' in a terminal, it updates the font files 'src/assets/fonts/icon-font.eot/ttf/woff/woff2', and re-generates the scss file 'src/components/icon/svg2iconfont.scss' via the template 'src/components/icon/template.txt'</li>
+</ul>
+
+<legend>Glyphicon library font</legend>
+
+Generate icon font from the Glyphicon library.
+See http://glyphicons.com/
+
+Markup: demo.icon.html
+
+Style guide: Base.Icon
+*/
+
+//Svg to icon font
+@import "svg2iconfont";
+
+.b-icon {
+    /* -------------- variables --------------- */
+    $icon-space: 5px;
+
+    &--side-left {
+        margin-right: $icon-space;
+    }
+
+    &--side-right {
+        margin-left: $icon-space;
+    }
+
+    &--top-offset {
+        position: relative;
+        top: 2px;
+    }
+
+}

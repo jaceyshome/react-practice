@@ -1,0 +1,38 @@
+@import "../../../styles/variables";
+
+.b-logo {
+    $white-logo: "../images/logo-white.png";
+    $orange-logo: "../images/logo.png";
+
+    background: url($orange-logo);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $logo-width;
+    height: 113px;
+
+    &--small {
+        width: $logo-small-width;
+        height: 85px;
+    }
+
+    &--white {
+        background: url($white-logo);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .b-header--white-log & {
+        background: url($white-logo);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+    .b-header--sticky & {
+        background: url($orange-logo);
+    }
+}

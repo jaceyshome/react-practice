@@ -1,0 +1,81 @@
+// Bootstrap breakpoints
+$screen-xxs-max: 479px; // Mobile portrait; subset of the "xs breakpoint"
+$screen-xs-min: 480px;
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm: $screen-sm-min;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md: $screen-md-min;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+$screen-lg: $screen-lg-min;
+
+//---------------- colours ----------------
+$color-bg-default: #ffffff;
+$color-brand-orange: #ff6900;
+$color-brand-grey: #969696;
+$color-brand-light-grey: #e6e7e8;
+$color-brand-black: #000000;
+
+// Media query shorthands e.g. @media ($tablet-up) { ... }
+$mobile-landscape-down: "max-width: #{$screen-xxs-max}";
+$mobile-landscape-up: "min-width: #{$screen-xs-min}";
+$handset-down: "max-width: #{$screen-xs-max}";
+$tablet-down: "max-width: #{$screen-sm-max}";
+$tablet-up: "min-width: #{$screen-sm-min}";
+$lap-and-up: "min-width: 801px";
+$ipad-landscape-up: "min-width: 1024px";
+$small-desktop-down: "min-width: #{$screen-md-max}";
+$small-desktop-up: "min-width: #{$screen-md-min}";
+$large-desktop-up: "min-width: #{$screen-lg-min}";
+
+// Animations
+$animation-speed-normal: 400ms;
+$animation-speed-fast: 200ms;
+
+//container
+$page-container-max-width: 1200px;
+
+
+//---------------- fonts -----------------
+$font-path: '../fonts';
+$font-weight-regular: 'normal';
+
+$font-family-default: 'Circular Std Book', Arial;
+$font-family-bold: 'Circular Std Bold', Arial;
+
+$font-size-small: 12px;
+$font-size-default: 14px;
+$font-size-large: 16px;
+$font-size-larger: 18px;
+
+$font-color-white: #ffffff;
+$font-color-orange: $color-brand-orange;
+$font-color-grey: $color-brand-grey;
+$font-color-dark: $color-brand-black;
+$font-color-dark-grey: #424242;
+
+//---------------- space -----------------
+$paragraph-spacing: 20px;
+$module-spacing: 100px;
+$module-mobile-spacing: 75px;
+$component-space: 25px;
+
+//---------------- z-indexes --------------
+$header-zindex: 100;
+$introduction-zindex: 90;
+$hero-button-zindex: 20;
+$connect-body-panel-zindex: 800;
+$popup-panel-zindex: 1000;
+
+//---------------- components -------------
+$logo-width: 100px;
+$logo-small-width: 76px;
+$studio-team-panel-padding: 75px 70px 70px 70px;
+$header-menu-triangle-height: 22px;
+
+//---------------- animations -------------
+$animation-speed-normal: 400ms;
+$animation-speed-fast: 200ms;
+$animation-timing-in-out-quint: cubic-bezier(1.000, 0.000, 0.000, 1.000);

@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+
+/**
+* Scrollbar
+* https://codepen.io/GhostRider/pen/GHaFw
+* Style guide: Blocks.SScrollbar
+*/
+
+.b-scrollbar {
+
+    &--straight-dark {
+        &::-webkit-scrollbar-track {
+            background-color: $color-bg-default;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: $color-bg-default ;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-brand-black;
+        }
+    }
+
+}
+
+
+

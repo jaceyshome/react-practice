@@ -1,0 +1,12 @@
+@import "../../../styles/variables";
+
+.b-social-share-group {
+
+    &--media-page {
+        display: inline-block;
+        background-color: $color-brand-orange;
+        padding-top: 28px;
+        padding-right: 160px;
+        padding-bottom: 28px;
+    }
+}

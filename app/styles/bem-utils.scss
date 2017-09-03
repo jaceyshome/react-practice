@@ -1,0 +1,88 @@
+// ----
+// Sass (v3.4.0)
+// Compass (v1.0.0)
+// ----
+
+$elementSeparator: '__';
+$modifierSeparator: '--';
+
+@function containsModifier($selector) {
+    $selector: selectorToString($selector);
+    @if str-index($selector, $modifierSeparator) {
+        @return true;
+    } @else {
+        @return false;
+    }
+}
+
+@function selectorToString($selector) {
+    $selector: inspect($selector); //cast to string
+    $selector: str-slice($selector, 1, -2); //remove brackets
+    @return $selector;
+}
+
+@function getBlock($selector) {
+    $selector: nth(nth($selector, 1), 1);
+    @if str-index($selector, $modifierSeparator) {
+        $selector: str-slice($selector, 0, str-index($selector, $modifierSeparator) - 1);
+    }
+    @if str-index($selector, $elementSeparator) {
+        $selector: str-slice($selector, 0, str-index($selector, $elementSeparator) - 1);
+    }
+    @return $selector;
+}
+
+@mixin block($block) {
+    .#{$block} {
+        @content;
+    }
+}
+
+@mixin element($element) {
+    $selector: &;
+    @if containsModifier($selector) {
+        $block: getBlock($selector);
+        @at-root {
+            #{$selector} {
+                #{$block+$elementSeparator+$element} {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        @at-root {
+            #{$selector+$elementSeparator+$element} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin modifier($modifiers) {
+    // Multiple modifiers can be specified, so they have to be appended each one to the current block or element
+    // and then combined e.g. .block--modifier.block--othermodifier
+    $selector: nth(&, 1);
+    $current-selector: nth(nth(&, 1), length(nth(&, 1)));
+    $selectors: "";
+    @each $modifier in $modifiers {
+        $selectors: $selectors + #{$current-selector+$modifierSeparator+$modifier};
+    }
+
+    @at-root {
+        // If operating on an element rather than a block
+        @if length($selector) > 1 {
+            // Get all the leading parent selectors up to (but not including) where the modifier is being applied
+            $parent: ();
+            @for $i from 1 to length($selector) {
+                $parent: append($parent, nth($selector, $i));
+            }
+            #{$parent} #{$selectors} {
+                @content;
+            }
+        } @else {
+            #{$selectors} {
+                @content;
+            }
+        }
+    }
+}

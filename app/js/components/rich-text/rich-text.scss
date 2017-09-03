@@ -1,0 +1,53 @@
+@import "../../../styles/variables";
+
+.b-rich-text {
+
+    ul, ol {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    ul li {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            left: -25px;
+            top: 0;
+            color: $color-brand-orange;
+            font-weight: bold;
+            font-family: Arial;
+            content: '+';
+        }
+
+    }
+
+
+
+    ul li li {
+        padding-left: 25px;
+
+        &:before {
+            top: 12px;
+            left: 0;
+            background: $color-brand-orange;
+            color: $color-brand-orange;
+            width: 10px;
+            height: 2px;
+            content: '';
+        }
+
+        //HACK: to overlay the first level list bullet
+        &:after {
+            position: absolute;
+            top: 0;
+            left: -25px;
+            background-color: $color-bg-default;
+            width: 25px;
+            height: 25px;
+            content: '';
+        }
+
+    }
+
+}

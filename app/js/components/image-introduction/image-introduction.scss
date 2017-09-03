@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+/*
+ * Introduction panel
+ * Style guide: Components.Container
+*/
+.b-image-introduction {
+    position: relative;
+    z-index: $introduction-zindex;
+    padding: 0 0 50px 0;
+
+    @media ($mobile-landscape-up) {
+        padding: 0 20px 65px 0;
+    }
+
+    @media ($tablet-up) {
+        padding: 90px 0 65px 0;
+    }
+
+    @media ($lap-and-up) {
+        padding-left: 60px;
+    }
+
+    @media ($ipad-landscape-up) {
+        padding: 90px 0 65px 80px;
+    }
+
+    @media ($large-desktop-up) {
+        padding: 90px 0 65px 100px;
+    }
+
+}

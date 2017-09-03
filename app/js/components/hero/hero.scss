@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+
+/**
+* Hero media component
+* @see http://kenwheeler.github.io/slick/
+*/
+.b-hero {
+    position: relative;
+    overflow: hidden;
+
+    &__slide {
+
+        width: 100%;
+        height: 700px;
+
+        @media ($large-desktop-up) {
+            height: 800px;
+        }
+    }
+
+    .b-page--project--sm-landing-mode & {
+
+        .b-hero__slide {
+
+            height: 650px;
+
+            @media ($large-desktop-up) {
+                height: 650px;
+            }
+        }
+
+    }
+}

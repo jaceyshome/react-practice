@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+/*
+List base
+.b-list--loose - loose list
+.b-list--tight - tight list
+
+Style guide: Blocks.List
+*/
+.b-list {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        margin-bottom: $paragraph-spacing;
+        font-size: $font-size-large;
+        list-style-type: none;
+
+        &:last-child {
+            margin-bottom: 0 ;
+        }
+
+        &--activated {
+            color: $font-color-orange;
+        }
+
+    }
+
+}

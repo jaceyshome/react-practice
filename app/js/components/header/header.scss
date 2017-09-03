@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+/**
+* Global header component
+*
+*/
+.b-header {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    z-index: $header-zindex;
+    margin: auto;
+    margin-left: 50%;
+    width: 100%;
+    min-height: 155px;
+    transition: $animation-speed-fast;
+
+    &__logo {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: $component-space;
+    }
+
+    &__menu {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &--sticked {
+        position: relative;
+    }
+
+    &--sm-landing-mode {
+
+        @media ($tablet-up) {
+            position: relative;
+
+            &.b-header--sticky {
+                position: fixed;
+            }
+        }
+
+    }
+
+    &--sticky {
+        background-color: $color-bg-default;
+        box-shadow: 0 1px 15px $color-brand-grey;;
+    }
+
+}

@@ -1,0 +1,29 @@
+
+.b-team-panel {
+
+    &__container {
+        padding: $studio-team-panel-padding;
+
+        &--header {
+            padding-top: 0;
+        }
+
+        &--footer {
+
+        }
+
+    }
+
+    &__header-title {
+        font-size: 60px;
+    }
+
+    &__footer-title {
+        font-size: 40px;
+    }
+
+    &__header-text {
+        font-size: 36px;
+    }
+
+}

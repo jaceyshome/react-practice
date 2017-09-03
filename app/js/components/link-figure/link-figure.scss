@@ -1,0 +1,44 @@
+/**
+* Link figure block
+* Style guide: Blocks.Link figure
+*/
+
+.b-link-figure {
+    display: block;
+
+    &__content-wrapper {
+        position: relative;
+    }
+
+    &__image {  }
+
+    &__title {  }
+
+    &__title-icon {
+        position: absolute;
+        left: 0;
+        opacity: 1;
+    }
+
+    //Fover and focus state
+    &:focus,
+    &:hover {
+
+        .b-link-figure__image {
+            opacity: 0.8;
+        }
+
+        .b-link-figure__title {
+            color: $color-brand-orange;
+        }
+
+        .b-link-figure__title-icon {
+            opacity: 1;
+            color: $color-brand-orange;
+        }
+    }
+
+    .b-carousel & {
+        margin: 10px;
+    }
+}

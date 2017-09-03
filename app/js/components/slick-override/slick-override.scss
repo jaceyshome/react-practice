@@ -1,0 +1,64 @@
+
+/* override slick button styles
+ *
+ */
+
+.b-slick {
+
+    $slider-button-radius: 22px;
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+
+    .slick-track {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .slick-slide {
+        float: left;
+    }
+
+    .slick-arrow {
+        display: block;
+        position: absolute;
+        padding: 0;
+        top: 42%;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        background-size: cover;
+        width: $slider-button-radius;
+        height: $slider-button-radius;
+
+        @media ($large-desktop-up) {
+            top: 50%;
+        }
+
+    }
+
+    .slick-prev {
+        background-image: url("../images/hero-button-prev.png");
+        z-index: $hero-button-zindex;
+        left: $component-space;
+    }
+
+    .slick-next {
+        background-image: url("../images/hero-button-next.png");
+        z-index: $hero-button-zindex;
+        right: $component-space;
+    }
+
+}
+
+.b-project__carousel .slick-arrow {
+    display: none !important;
+}

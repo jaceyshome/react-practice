@@ -1,0 +1,35 @@
+.b-gallery-item {
+
+    &__content-holder {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 26px;
+            z-index: 10;
+            background-image: url(../images/trangle-white.png);
+            background-repeat: no-repeat;
+            width: 80px;
+            height: 21px;
+            content: '';
+        }
+
+    }
+
+    &__text-holder {
+        padding: $module-spacing / 2;
+
+        .b-link-figure & {
+            background-color: $color-brand-light-grey;
+            color: $font-color-dark;
+
+            &:hover,&:focus {
+                background-color: $color-brand-orange;
+                color: $font-color-white;
+            }
+        }
+
+    }
+
+}

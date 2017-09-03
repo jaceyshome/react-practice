@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+/**
+* Hero media component
+* @see http://kenwheeler.github.io/slick/
+*/
+.b-carousel {
+    position: relative;
+
+    &__slide {
+        width: 100%;
+    }
+
+    &__label {
+        margin-bottom: 33px;
+    }
+
+    &__button {
+        margin-left: 10px;
+
+        &--sm-gap {
+            margin-left: 5px;
+        }
+
+    }
+}

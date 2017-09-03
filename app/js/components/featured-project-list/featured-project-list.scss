@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+/**
+* Featured project list component
+*
+* Style guide: Components.Featured project list
+*/
+.b-featured-project-list {
+
+    &__column {
+
+        @media ($handset-down) {
+            width: 100%;
+        }
+
+        &--left {
+
+        }
+
+        &--right {
+
+        }
+    }
+
+}

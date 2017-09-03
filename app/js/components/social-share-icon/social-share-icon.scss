@@ -1,0 +1,39 @@
+/**
+* Social share icon
+
+*/
+.b-social-share-icon {
+
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+
+    &--facebook {
+        background-image: url("../images/icons/svg/facebook.svg");
+
+        &:hover,
+        &:focus {
+            background-image: url("../images/icons/svg/facebook_hover.svg");
+        }
+    }
+
+    &--linkedin {
+        background-image: url("../images/icons/svg/linkedin.svg");
+
+        &:hover,
+        &:focus {
+            background-image: url("../images/icons/svg/linkedin_hover.svg");
+        }
+    }
+
+    &--twitter {
+        background-image: url("../images/icons/svg/twitter.svg");
+
+        &:hover,
+        &:focus {
+            background-image: url("../images/icons/svg/twitter_hover.svg");
+        }
+    }
+}

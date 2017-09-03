@@ -1,0 +1,45 @@
+
+.b-link {
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+
+    &__text {}
+
+    &__icon {}
+
+    &:hover,
+    &:focus {
+        .b-link__text {
+            text-decoration: underline;
+        }
+    }
+
+    &--block {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &--featured {
+
+        color: $font-color-dark;
+
+        &:hover,
+        &:focus {
+            .b-link__text,
+            .b-icon {
+                color: $font-color-orange;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &--normal {
+        text-decoration: underline;
+    }
+
+
+}

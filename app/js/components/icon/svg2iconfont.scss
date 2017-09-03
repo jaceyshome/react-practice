@@ -1,0 +1,115 @@
+//Template example:https://github.com/backflip/gulp-iconfont-css/blob/master/templates/_icons.scss
+
+//Tempalte.txt is the template for the svg2iconfont.scss file.
+
+/*
+Icon (icon font)
+
+Generic icon with different types (e.g. "b-icon b-icon--search" ).
+
+.b-icon--close - :
+.b-icon--face-book - :
+.b-icon--linkedin - :
+.b-icon--pointer-left - :
+.b-icon--pointer-right - :
+.b-icon--twitter - :
+
+
+Markup: demo.icon.html
+
+Style guide: Blocks.Icon.Icon font
+*/
+
+@font-face {
+    font-family: "icon-font";
+    src: url("../fonts/icon-font.eot");
+    src: url("../fonts/icon-font.eot?#iefix") format("eot"),
+    url("../fonts/icon-font.woff2") format("woff2"),
+    url("../fonts/icon-font.woff") format("woff"),
+    url("../fonts/icon-font.ttf") format("truetype"),
+    url("../fonts/icon-font.svg#icon-font") format("svg");
+}
+
+
+@mixin b-icon-styles {
+    text-transform: none;
+    text-decoration: none;
+    font-family: "icon-font";
+    //-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+}
+
+%b-icon {
+    @include b-icon-styles;
+}
+
+@function b-icon-char($filename) {
+    $char: "";
+
+    @if $filename == close {
+        $char: "\E001";
+    }
+    @if $filename == face-book {
+        $char: "\E002";
+    }
+    @if $filename == linkedin {
+        $char: "\E003";
+    }
+    @if $filename == pointer-left {
+        $char: "\E004";
+    }
+    @if $filename == pointer-right {
+        $char: "\E005";
+    }
+    @if $filename == twitter {
+        $char: "\E006";
+    }
+
+    @return $char;
+}
+
+@mixin b-icon($filename, $insert: before, $extend: true) {
+    &:#{$insert} {
+        @if $extend {
+            @extend %b-icon;
+        } @else {
+            @include b-icon-styles;
+        }
+        content: b-icon-char($filename);
+    }
+}
+
+
+.b-icon--close {
+
+    @include b-icon(close);
+}
+
+.b-icon--face-book {
+
+    @include b-icon(face-book);
+}
+
+.b-icon--linkedin {
+
+    @include b-icon(linkedin);
+}
+
+.b-icon--pointer-left {
+
+    @include b-icon(pointer-left);
+}
+
+.b-icon--pointer-right {
+
+    @include b-icon(pointer-right);
+}
+
+.b-icon--twitter {
+
+    @include b-icon(twitter);
+}

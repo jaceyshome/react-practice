@@ -1,0 +1,49 @@
+@import "../../../styles/variables";
+
+/*
+Overlay
+
+Utility/layout block that allows a foreground object to be placed on top of a background object. It is not
+ opinionated about margins/padding, sizes, colours etc and it expects these to be set by another block.
+
+.b-overlay__foreground--pull-left - Forces the overlay to display to the left side
+.b-overlay__foreground--pull-right - Forces the overlay to display to the right side
+
+Markup: demo.overlay.html
+
+Style guide: Layout.Overlay
+*/
+
+.b-overlay {
+    position: relative;
+
+    &__background {
+        position: relative;
+
+        &:hover {
+            .b-overlay__red-filter {
+                z-index: 1;
+                height: 100%;
+            }
+        }
+
+    }
+
+    &__foreground {
+        position: absolute;
+        top: 0;
+
+        &--pull-left {
+            right: auto;
+            left: 0;
+        }
+
+        &--pull-right {
+            right: 0;
+            left: auto;
+        }
+    }
+
+}
+
+

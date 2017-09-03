@@ -1,0 +1,71 @@
+//Template example:https://github.com/backflip/gulp-iconfont-css/blob/master/templates/_icons.scss
+
+//Tempalte.txt is the template for the svg2iconfont.scss file.
+
+/*
+Icon (icon font)
+
+Generic icon with different types (e.g. "b-icon b-icon--search" ).
+
+<% _.each(glyphs, function(glyph) {%>.<%= cssClass%>--<%= glyph.fileName %> - :
+<% }); %>
+
+Markup: demo.icon.html
+
+Style guide: Blocks.Icon.Icon font
+*/
+
+@font-face {
+    font-family: "<%= fontName %>";
+    src: url("<%= fontPath %><%= fontName %>.eot");
+    src: url("<%= fontPath %><%= fontName %>.eot?#iefix") format("eot"),
+    url("<%= fontPath %><%= fontName %>.woff2") format("woff2"),
+    url("<%= fontPath %><%= fontName %>.woff") format("woff"),
+    url("<%= fontPath %><%= fontName %>.ttf") format("truetype"),
+    url("<%= fontPath %><%= fontName %>.svg#<%= fontName %>") format("svg");
+}
+
+
+@mixin <%= cssClass%>-styles {
+    text-transform: none;
+    text-decoration: none;
+    font-family: "icon-font";
+    //-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+}
+
+%<%= cssClass%> {
+    @include <%= cssClass%>-styles;
+}
+
+@function <%= cssClass%>-char($filename) {
+    $char: "";
+<% _.each(glyphs, function(glyph) { %>
+    @if $filename == <%= glyph.fileName %> {
+        $char: "\<%= glyph.codePoint %>";
+    }<% }); %>
+
+    @return $char;
+}
+
+@mixin <%= cssClass%>($filename, $insert: before, $extend: true) {
+    &:#{$insert} {
+        @if $extend {
+            @extend %<%= cssClass%>;
+        } @else {
+            @include <%= cssClass%>-styles;
+        }
+        content: <%= cssClass%>-char($filename);
+    }
+}
+
+<% _.each(glyphs, function(glyph) { %>
+.<%= cssClass%>--<%= glyph.fileName %> {
+
+    @include <%= cssClass%>(<%= glyph.fileName %>);
+}
+<% }); %>

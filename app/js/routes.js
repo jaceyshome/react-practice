@@ -39,9 +39,6 @@ export default (
             <Route path="projects" name="projects" component={ProjectsPage} onEnter={onEnterPage} />
             <Route path="project/:navigationTitle" name="project" component={ProjectPage} onEnter={onEnterPage} />
             <Route path="article/:navigationTitle" name="article" component={ArticlePage} onEnter={onEnterPage} />
-            <Route path="connect" name="connect" component={ConnectPage} onEnter={onEnterPage} />
-            <Route path="media" name="media" component={MediaPage} onEnter={onEnterPage} />
-            <Route path="studio" name="studio" component={StudioPage} onEnter={onEnterPage} />
             <Route path="*"  component={HomePage} onEnter={onEnterPage} />
         </Route>
     </Router>

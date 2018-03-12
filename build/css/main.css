@@ -1,7 +1,3309 @@
-/*! Avalanche | MIT License | @colourgarden */.grid{display:block;list-style:none;padding:0;margin:0;margin-left:-20px;font-size:0rem}.grid__cell{box-sizing:border-box;display:inline-block;width:100%;padding:0;padding-left:20px;margin:0;vertical-align:top;font-size:1rem}.\31\/2,.\32\/4{width:50%}.\31\/3{width:33.33333%}.\32\/3{width:66.66667%}.\31\/4{width:25%}.\33\/4{width:75%}@media screen and (max-width: 499px){.\31\/2--thumb,.\32\/4--thumb{width:50%}.\31\/3--thumb{width:33.33333%}.\32\/3--thumb{width:66.66667%}.\31\/4--thumb{width:25%}.\33\/4--thumb{width:75%}}@media screen and (min-width: 500px) and (max-width: 800px){.\31\/2--handheld,.\32\/4--handheld{width:50%}.\31\/3--handheld{width:33.33333%}.\32\/3--handheld{width:66.66667%}.\31\/4--handheld{width:25%}.\33\/4--handheld{width:75%}}@media screen and (min-width: 500px){.\31\/2--handheld-and-up,.\32\/4--handheld-and-up{width:50%}.\31\/3--handheld-and-up{width:33.33333%}.\32\/3--handheld-and-up{width:66.66667%}.\31\/4--handheld-and-up{width:25%}.\33\/4--handheld-and-up{width:75%}}@media screen and (max-width: 800px){.\31\/2--pocket,.\32\/4--pocket{width:50%}.\31\/3--pocket{width:33.33333%}.\32\/3--pocket{width:66.66667%}.\31\/4--pocket{width:25%}.\33\/4--pocket{width:75%}}@media screen and (min-width: 801px) and (max-width: 1024px){.\31\/2--lap,.\32\/4--lap{width:50%}.\31\/3--lap{width:33.33333%}.\32\/3--lap{width:66.66667%}.\31\/4--lap{width:25%}.\33\/4--lap{width:75%}}@media screen and (min-width: 801px){.\31\/2--lap-and-up,.\32\/4--lap-and-up{width:50%}.\31\/3--lap-and-up{width:33.33333%}.\32\/3--lap-and-up{width:66.66667%}.\31\/4--lap-and-up{width:25%}.\33\/4--lap-and-up{width:75%}}@media screen and (max-width: 1024px){.\31\/2--portable,.\32\/4--portable{width:50%}.\31\/3--portable{width:33.33333%}.\32\/3--portable{width:66.66667%}.\31\/4--portable{width:25%}.\33\/4--portable{width:75%}}@media screen and (min-width: 1025px){.\31\/2--desk,.\32\/4--desk{width:50%}.\31\/3--desk{width:33.33333%}.\32\/3--desk{width:66.66667%}.\31\/4--desk{width:25%}.\33\/4--desk{width:75%}}@media screen and (min-width: 1160px){.\31\/2--widescreen,.\32\/4--widescreen{width:50%}.\31\/3--widescreen{width:33.33333%}.\32\/3--widescreen{width:66.66667%}.\31\/4--widescreen{width:25%}.\33\/4--widescreen{width:75%}}@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){.\31\/2--retina,.\32\/4--retina{width:50%}.\31\/3--retina{width:33.33333%}.\32\/3--retina{width:66.66667%}.\31\/4--retina{width:25%}.\33\/4--retina{width:75%}}/*!
+@charset "UTF-8";
+/*! Avalanche | MIT License | @colourgarden */
+/**
+ * SETTINGS
+ */
+/**
+ * LOGIC aka THE MAGIC
+ */
+/**
+ * GRID LAYOUT
+ */
+/* line 181, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.grid {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  font-size: 0; }
+
+/* line 190, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.grid__cell {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  vertical-align: top;
+  font-size: 1rem; }
+
+/**
+ * GRID WIDTHS
+ */
+/* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.\31\/2, .\32\/4 {
+  width: 50%; }
+
+/* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.\31\/3 {
+  width: 33.33333%; }
+
+/* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.\32\/3 {
+  width: 66.66667%; }
+
+/* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.\31\/4 {
+  width: 25%; }
+
+/* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+.\33\/4 {
+  width: 75%; }
+
+@media screen and (max-width: 499px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--thumb, .\32\/4--thumb {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--thumb {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--thumb {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--thumb {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--thumb {
+    width: 75%; } }
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--handheld, .\32\/4--handheld {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--handheld {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--handheld {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--handheld {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--handheld {
+    width: 75%; } }
+
+@media screen and (min-width: 500px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--handheld-and-up, .\32\/4--handheld-and-up {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--handheld-and-up {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--handheld-and-up {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--handheld-and-up {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--handheld-and-up {
+    width: 75%; } }
+
+@media screen and (max-width: 800px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--pocket, .\32\/4--pocket {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--pocket {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--pocket {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--pocket {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--pocket {
+    width: 75%; } }
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--lap, .\32\/4--lap {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--lap {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--lap {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--lap {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--lap {
+    width: 75%; } }
+
+@media screen and (min-width: 801px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--lap-and-up, .\32\/4--lap-and-up {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--lap-and-up {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--lap-and-up {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--lap-and-up {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--lap-and-up {
+    width: 75%; } }
+
+@media screen and (max-width: 1024px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--portable, .\32\/4--portable {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--portable {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--portable {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--portable {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--portable {
+    width: 75%; } }
+
+@media screen and (min-width: 1025px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--desk, .\32\/4--desk {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--desk {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--desk {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--desk {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--desk {
+    width: 75%; } }
+
+@media screen and (min-width: 1160px) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--widescreen, .\32\/4--widescreen {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--widescreen {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--widescreen {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--widescreen {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--widescreen {
+    width: 75%; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/2--retina, .\32\/4--retina {
+    width: 50%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/3--retina {
+    width: 33.33333%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\32\/3--retina {
+    width: 66.66667%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\31\/4--retina {
+    width: 25%; }
+  /* line 141, /Users/CI/Projects/react-practice/node_modules/avalanche-css/_avalanche.scss */
+  .\33\/4--retina {
+    width: 75%; } }
+
+/*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
  * Copyright (c) 2016 Daniel Eden
- */.animated{animation-duration:1s;animation-fill-mode:both}.animated.infinite{animation-iteration-count:infinite}.animated.hinge{animation-duration:2s}.animated.flipOutX,.animated.flipOutY,.animated.bounceIn,.animated.bounceOut{animation-duration:.75s}@keyframes bounce{from,20%,53%,80%,to{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);transform:translate3d(0, 0, 0)}40%,43%{animation-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);transform:translate3d(0, -30px, 0)}70%{animation-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);transform:translate3d(0, -15px, 0)}90%{transform:translate3d(0, -4px, 0)}}.bounce{animation-name:bounce;transform-origin:center bottom}@keyframes flash{from,50%,to{opacity:1}25%,75%{opacity:0}}.flash{animation-name:flash}@keyframes pulse{from{transform:scale3d(1, 1, 1)}50%{transform:scale3d(1.05, 1.05, 1.05)}to{transform:scale3d(1, 1, 1)}}.pulse{animation-name:pulse}@keyframes rubberBand{from{transform:scale3d(1, 1, 1)}30%{transform:scale3d(1.25, 0.75, 1)}40%{transform:scale3d(0.75, 1.25, 1)}50%{transform:scale3d(1.15, 0.85, 1)}65%{transform:scale3d(0.95, 1.05, 1)}75%{transform:scale3d(1.05, 0.95, 1)}to{transform:scale3d(1, 1, 1)}}.rubberBand{animation-name:rubberBand}@keyframes shake{from,to{transform:translate3d(0, 0, 0)}10%,30%,50%,70%,90%{transform:translate3d(-10px, 0, 0)}20%,40%,60%,80%{transform:translate3d(10px, 0, 0)}}.shake{animation-name:shake}@keyframes headShake{0%{transform:translateX(0)}6.5%{transform:translateX(-6px) rotateY(-9deg)}18.5%{transform:translateX(5px) rotateY(7deg)}31.5%{transform:translateX(-3px) rotateY(-5deg)}43.5%{transform:translateX(2px) rotateY(3deg)}50%{transform:translateX(0)}}.headShake{animation-timing-function:ease-in-out;animation-name:headShake}@keyframes swing{20%{transform:rotate3d(0, 0, 1, 15deg)}40%{transform:rotate3d(0, 0, 1, -10deg)}60%{transform:rotate3d(0, 0, 1, 5deg)}80%{transform:rotate3d(0, 0, 1, -5deg)}to{transform:rotate3d(0, 0, 1, 0deg)}}.swing{transform-origin:top center;animation-name:swing}@keyframes tada{from{transform:scale3d(1, 1, 1)}10%,20%{transform:scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)}30%,50%,70%,90%{transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)}40%,60%,80%{transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)}to{transform:scale3d(1, 1, 1)}}.tada{animation-name:tada}@keyframes wobble{from{transform:none}15%{transform:translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)}30%{transform:translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)}45%{transform:translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)}60%{transform:translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)}75%{transform:translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)}to{transform:none}}.wobble{animation-name:wobble}@keyframes jello{from,11.1%,to{transform:none}22.2%{transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{transform:skewX(6.25deg) skewY(6.25deg)}44.4%{transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{transform:skewX(-0.78125deg) skewY(-0.78125deg)}77.7%{transform:skewX(0.39062deg) skewY(0.39062deg)}88.8%{transform:skewX(-0.19531deg) skewY(-0.19531deg)}}.jello{animation-name:jello;transform-origin:center}@keyframes bounceIn{from,20%,40%,60%,80%,to{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}20%{transform:scale3d(1.1, 1.1, 1.1)}40%{transform:scale3d(0.9, 0.9, 0.9)}60%{opacity:1;transform:scale3d(1.03, 1.03, 1.03)}80%{transform:scale3d(0.97, 0.97, 0.97)}to{opacity:1;transform:scale3d(1, 1, 1)}}.bounceIn{animation-name:bounceIn}@keyframes bounceInDown{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:0;transform:translate3d(0, -3000px, 0)}60%{opacity:1;transform:translate3d(0, 25px, 0)}75%{transform:translate3d(0, -10px, 0)}90%{transform:translate3d(0, 5px, 0)}to{transform:none}}.bounceInDown{animation-name:bounceInDown}@keyframes bounceInLeft{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:0;transform:translate3d(-3000px, 0, 0)}60%{opacity:1;transform:translate3d(25px, 0, 0)}75%{transform:translate3d(-10px, 0, 0)}90%{transform:translate3d(5px, 0, 0)}to{transform:none}}.bounceInLeft{animation-name:bounceInLeft}@keyframes bounceInRight{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}from{opacity:0;transform:translate3d(3000px, 0, 0)}60%{opacity:1;transform:translate3d(-25px, 0, 0)}75%{transform:translate3d(10px, 0, 0)}90%{transform:translate3d(-5px, 0, 0)}to{transform:none}}.bounceInRight{animation-name:bounceInRight}@keyframes bounceInUp{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}from{opacity:0;transform:translate3d(0, 3000px, 0)}60%{opacity:1;transform:translate3d(0, -20px, 0)}75%{transform:translate3d(0, 10px, 0)}90%{transform:translate3d(0, -5px, 0)}to{transform:translate3d(0, 0, 0)}}.bounceInUp{animation-name:bounceInUp}@keyframes bounceOut{20%{transform:scale3d(0.9, 0.9, 0.9)}50%,55%{opacity:1;transform:scale3d(1.1, 1.1, 1.1)}to{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}}.bounceOut{animation-name:bounceOut}@keyframes bounceOutDown{20%{transform:translate3d(0, 10px, 0)}40%,45%{opacity:1;transform:translate3d(0, -20px, 0)}to{opacity:0;transform:translate3d(0, 2000px, 0)}}.bounceOutDown{animation-name:bounceOutDown}@keyframes bounceOutLeft{20%{opacity:1;transform:translate3d(20px, 0, 0)}to{opacity:0;transform:translate3d(-2000px, 0, 0)}}.bounceOutLeft{animation-name:bounceOutLeft}@keyframes bounceOutRight{20%{opacity:1;transform:translate3d(-20px, 0, 0)}to{opacity:0;transform:translate3d(2000px, 0, 0)}}.bounceOutRight{animation-name:bounceOutRight}@keyframes bounceOutUp{20%{transform:translate3d(0, -10px, 0)}40%,45%{opacity:1;transform:translate3d(0, 20px, 0)}to{opacity:0;transform:translate3d(0, -2000px, 0)}}.bounceOutUp{animation-name:bounceOutUp}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{animation-name:fadeIn}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0, -100%, 0)}to{opacity:1;transform:none}}.fadeInDown{animation-name:fadeInDown}@keyframes fadeInDownBig{from{opacity:0;transform:translate3d(0, -2000px, 0)}to{opacity:1;transform:none}}.fadeInDownBig{animation-name:fadeInDownBig}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%, 0, 0)}to{opacity:1;transform:none}}.fadeInLeft{animation-name:fadeInLeft}@keyframes fadeInLeftBig{from{opacity:0;transform:translate3d(-2000px, 0, 0)}to{opacity:1;transform:none}}.fadeInLeftBig{animation-name:fadeInLeftBig}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%, 0, 0)}to{opacity:1;transform:none}}.fadeInRight{animation-name:fadeInRight}@keyframes fadeInRightBig{from{opacity:0;transform:translate3d(2000px, 0, 0)}to{opacity:1;transform:none}}.fadeInRightBig{animation-name:fadeInRightBig}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0, 100%, 0)}to{opacity:1;transform:none}}.fadeInUp{animation-name:fadeInUp}@keyframes fadeInUpBig{from{opacity:0;transform:translate3d(0, 2000px, 0)}to{opacity:1;transform:none}}.fadeInUpBig{animation-name:fadeInUpBig}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.fadeOut{animation-name:fadeOut}@keyframes fadeOutDown{from{opacity:1}to{opacity:0;transform:translate3d(0, 100%, 0)}}.fadeOutDown{animation-name:fadeOutDown}@keyframes fadeOutDownBig{from{opacity:1}to{opacity:0;transform:translate3d(0, 2000px, 0)}}.fadeOutDownBig{animation-name:fadeOutDownBig}@keyframes fadeOutLeft{from{opacity:1}to{opacity:0;transform:translate3d(-100%, 0, 0)}}.fadeOutLeft{animation-name:fadeOutLeft}@keyframes fadeOutLeftBig{from{opacity:1}to{opacity:0;transform:translate3d(-2000px, 0, 0)}}.fadeOutLeftBig{animation-name:fadeOutLeftBig}@keyframes fadeOutRight{from{opacity:1}to{opacity:0;transform:translate3d(100%, 0, 0)}}.fadeOutRight{animation-name:fadeOutRight}@keyframes fadeOutRightBig{from{opacity:1}to{opacity:0;transform:translate3d(2000px, 0, 0)}}.fadeOutRightBig{animation-name:fadeOutRightBig}@keyframes fadeOutUp{from{opacity:1}to{opacity:0;transform:translate3d(0, -100%, 0)}}.fadeOutUp{animation-name:fadeOutUp}@keyframes fadeOutUpBig{from{opacity:1}to{opacity:0;transform:translate3d(0, -2000px, 0)}}.fadeOutUpBig{animation-name:fadeOutUpBig}@keyframes flip{from{transform:perspective(400px) rotate3d(0, 1, 0, -360deg);animation-timing-function:ease-out}40%{transform:perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);animation-timing-function:ease-out}50%{transform:perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);animation-timing-function:ease-in}80%{transform:perspective(400px) scale3d(0.95, 0.95, 0.95);animation-timing-function:ease-in}to{transform:perspective(400px);animation-timing-function:ease-in}}.animated.flip{-webkit-backface-visibility:visible;backface-visibility:visible;animation-name:flip}@keyframes flipInX{from{transform:perspective(400px) rotate3d(1, 0, 0, 90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotate3d(1, 0, 0, -20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotate3d(1, 0, 0, 10deg);opacity:1}80%{transform:perspective(400px) rotate3d(1, 0, 0, -5deg)}to{transform:perspective(400px)}}.flipInX{-webkit-backface-visibility:visible !important;backface-visibility:visible !important;animation-name:flipInX}@keyframes flipInY{from{transform:perspective(400px) rotate3d(0, 1, 0, 90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotate3d(0, 1, 0, -20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotate3d(0, 1, 0, 10deg);opacity:1}80%{transform:perspective(400px) rotate3d(0, 1, 0, -5deg)}to{transform:perspective(400px)}}.flipInY{-webkit-backface-visibility:visible !important;backface-visibility:visible !important;animation-name:flipInY}@keyframes flipOutX{from{transform:perspective(400px)}30%{transform:perspective(400px) rotate3d(1, 0, 0, -20deg);opacity:1}to{transform:perspective(400px) rotate3d(1, 0, 0, 90deg);opacity:0}}.flipOutX{animation-name:flipOutX;-webkit-backface-visibility:visible !important;backface-visibility:visible !important}@keyframes flipOutY{from{transform:perspective(400px)}30%{transform:perspective(400px) rotate3d(0, 1, 0, -15deg);opacity:1}to{transform:perspective(400px) rotate3d(0, 1, 0, 90deg);opacity:0}}.flipOutY{-webkit-backface-visibility:visible !important;backface-visibility:visible !important;animation-name:flipOutY}@keyframes lightSpeedIn{from{transform:translate3d(100%, 0, 0) skewX(-30deg);opacity:0}60%{transform:skewX(20deg);opacity:1}80%{transform:skewX(-5deg);opacity:1}to{transform:none;opacity:1}}.lightSpeedIn{animation-name:lightSpeedIn;animation-timing-function:ease-out}@keyframes lightSpeedOut{from{opacity:1}to{transform:translate3d(100%, 0, 0) skewX(30deg);opacity:0}}.lightSpeedOut{animation-name:lightSpeedOut;animation-timing-function:ease-in}@keyframes rotateIn{from{transform-origin:center;transform:rotate3d(0, 0, 1, -200deg);opacity:0}to{transform-origin:center;transform:none;opacity:1}}.rotateIn{animation-name:rotateIn}@keyframes rotateInDownLeft{from{transform-origin:left bottom;transform:rotate3d(0, 0, 1, -45deg);opacity:0}to{transform-origin:left bottom;transform:none;opacity:1}}.rotateInDownLeft{animation-name:rotateInDownLeft}@keyframes rotateInDownRight{from{transform-origin:right bottom;transform:rotate3d(0, 0, 1, 45deg);opacity:0}to{transform-origin:right bottom;transform:none;opacity:1}}.rotateInDownRight{animation-name:rotateInDownRight}@keyframes rotateInUpLeft{from{transform-origin:left bottom;transform:rotate3d(0, 0, 1, 45deg);opacity:0}to{transform-origin:left bottom;transform:none;opacity:1}}.rotateInUpLeft{animation-name:rotateInUpLeft}@keyframes rotateInUpRight{from{transform-origin:right bottom;transform:rotate3d(0, 0, 1, -90deg);opacity:0}to{transform-origin:right bottom;transform:none;opacity:1}}.rotateInUpRight{animation-name:rotateInUpRight}@keyframes rotateOut{from{transform-origin:center;opacity:1}to{transform-origin:center;transform:rotate3d(0, 0, 1, 200deg);opacity:0}}.rotateOut{animation-name:rotateOut}@keyframes rotateOutDownLeft{from{transform-origin:left bottom;opacity:1}to{transform-origin:left bottom;transform:rotate3d(0, 0, 1, 45deg);opacity:0}}.rotateOutDownLeft{animation-name:rotateOutDownLeft}@keyframes rotateOutDownRight{from{transform-origin:right bottom;opacity:1}to{transform-origin:right bottom;transform:rotate3d(0, 0, 1, -45deg);opacity:0}}.rotateOutDownRight{animation-name:rotateOutDownRight}@keyframes rotateOutUpLeft{from{transform-origin:left bottom;opacity:1}to{transform-origin:left bottom;transform:rotate3d(0, 0, 1, -45deg);opacity:0}}.rotateOutUpLeft{animation-name:rotateOutUpLeft}@keyframes rotateOutUpRight{from{transform-origin:right bottom;opacity:1}to{transform-origin:right bottom;transform:rotate3d(0, 0, 1, 90deg);opacity:0}}.rotateOutUpRight{animation-name:rotateOutUpRight}@keyframes hinge{0%{transform-origin:top left;animation-timing-function:ease-in-out}20%,60%{transform:rotate3d(0, 0, 1, 80deg);transform-origin:top left;animation-timing-function:ease-in-out}40%,80%{transform:rotate3d(0, 0, 1, 60deg);transform-origin:top left;animation-timing-function:ease-in-out;opacity:1}to{transform:translate3d(0, 700px, 0);opacity:0}}.hinge{animation-name:hinge}@keyframes rollIn{from{opacity:0;transform:translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)}to{opacity:1;transform:none}}.rollIn{animation-name:rollIn}@keyframes rollOut{from{opacity:1}to{opacity:0;transform:translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)}}.rollOut{animation-name:rollOut}@keyframes zoomIn{from{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}50%{opacity:1}}.zoomIn{animation-name:zoomIn}@keyframes zoomInDown{from{opacity:0;transform:scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}60%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1)}}.zoomInDown{animation-name:zoomInDown}@keyframes zoomInLeft{from{opacity:0;transform:scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}60%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1)}}.zoomInLeft{animation-name:zoomInLeft}@keyframes zoomInRight{from{opacity:0;transform:scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}60%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1)}}.zoomInRight{animation-name:zoomInRight}@keyframes zoomInUp{from{opacity:0;transform:scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}60%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1)}}.zoomInUp{animation-name:zoomInUp}@keyframes zoomOut{from{opacity:1}50%{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}to{opacity:0}}.zoomOut{animation-name:zoomOut}@keyframes zoomOutDown{40%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}to{opacity:0;transform:scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);transform-origin:center bottom;animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1)}}.zoomOutDown{animation-name:zoomOutDown}@keyframes zoomOutLeft{40%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0)}to{opacity:0;transform:scale(0.1) translate3d(-2000px, 0, 0);transform-origin:left center}}.zoomOutLeft{animation-name:zoomOutLeft}@keyframes zoomOutRight{40%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0)}to{opacity:0;transform:scale(0.1) translate3d(2000px, 0, 0);transform-origin:right center}}.zoomOutRight{animation-name:zoomOutRight}@keyframes zoomOutUp{40%{opacity:1;transform:scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}to{opacity:0;transform:scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);transform-origin:center bottom;animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1)}}.zoomOutUp{animation-name:zoomOutUp}@keyframes slideInDown{from{transform:translate3d(0, -100%, 0);visibility:visible}to{transform:translate3d(0, 0, 0)}}.slideInDown{animation-name:slideInDown}@keyframes slideInLeft{from{transform:translate3d(-100%, 0, 0);visibility:visible}to{transform:translate3d(0, 0, 0)}}.slideInLeft{animation-name:slideInLeft}@keyframes slideInRight{from{transform:translate3d(100%, 0, 0);visibility:visible}to{transform:translate3d(0, 0, 0)}}.slideInRight{animation-name:slideInRight}@keyframes slideInUp{from{transform:translate3d(0, 100%, 0);visibility:visible}to{transform:translate3d(0, 0, 0)}}.slideInUp{animation-name:slideInUp}@keyframes slideOutDown{from{transform:translate3d(0, 0, 0)}to{visibility:hidden;transform:translate3d(0, 100%, 0)}}.slideOutDown{animation-name:slideOutDown}@keyframes slideOutLeft{from{transform:translate3d(0, 0, 0)}to{visibility:hidden;transform:translate3d(-100%, 0, 0)}}.slideOutLeft{animation-name:slideOutLeft}@keyframes slideOutRight{from{transform:translate3d(0, 0, 0)}to{visibility:hidden;transform:translate3d(100%, 0, 0)}}.slideOutRight{animation-name:slideOutRight}@keyframes slideOutUp{from{transform:translate3d(0, 0, 0)}to{visibility:hidden;transform:translate3d(0, -100%, 0)}}.slideOutUp{animation-name:slideOutUp}@font-face{font-family:"Circular Std";src:url("../fonts/CircularStd-Medium.eot");src:url("../fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"),url("../fonts/CircularStd-Medium.woff") format("woff"),url("../fonts/CircularStd-Medium.ttf") format("truetype"),url("../fonts/CircularStd-Medium.svg#CircularStd-Medium") format("svg");font-style:normal;font-weight:"normal";text-rendering:optimizeLegibility}@font-face{font-family:"Circular Std Bold";src:url("../fonts/CircularStd-Bold.eot");src:url("../fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/CircularStd-Bold.woff") format("woff"),url("../fonts/CircularStd-Bold.ttf") format("truetype"),url("../fonts/CircularStd-Bold.svg#CircularStd-Bold") format("svg");font-style:normal;font-weight:"normal";text-rendering:optimizeLegibility}@font-face{font-family:"Circular Std Book";src:url("../fonts/CircularStd-Book.eot");src:url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"),url("../fonts/CircularStd-Book.woff") format("woff"),url("../fonts/CircularStd-Book.ttf") format("truetype"),url("../fonts/CircularStd-Book.svg#CircularStd-Book") format("svg");font-style:normal;font-weight:"normal";text-rendering:optimizeLegibility}.grid--flush{margin-left:0}.grid--flush .grid__cell{padding-left:0}body{overflow-x:hidden;margin:0;padding:0;width:100%;height:100%;font-size:14px;font-family:"Circular Std Book",Arial;background-color:#fff}p{margin:20px 0 20px 0;line-height:1.4}a{color:#000}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}@font-face{font-family:"icon-font";src:url("../fonts/icon-font.eot");src:url("../fonts/icon-font.eot?#iefix") format("eot"),url("../fonts/icon-font.woff2") format("woff2"),url("../fonts/icon-font.woff") format("woff"),url("../fonts/icon-font.ttf") format("truetype"),url("../fonts/icon-font.svg#icon-font") format("svg")}.b-icon--close:before,.b-icon--face-book:before,.b-icon--linkedin:before,.b-icon--pointer-left:before,.b-icon--pointer-right:before,.b-icon--twitter:before{text-transform:none;text-decoration:none;font-family:"icon-font";font-weight:normal;font-style:normal;font-variant:normal}.b-icon--close:before{content:""}.b-icon--face-book:before{content:""}.b-icon--linkedin:before{content:""}.b-icon--pointer-left:before{content:""}.b-icon--pointer-right:before{content:""}.b-icon--twitter:before{content:""}.b-icon--side-left{margin-right:5px}.b-icon--side-right{margin-left:5px}.b-icon--top-offset{position:relative;top:2px}.b-image{width:100%;background-color:transparent;background-size:cover;background-position:center center;background-repeat:no-repeat}.b-image--contain{background-size:contain}.b-image--ratio-7-8{width:100%;padding-bottom:114.28571%;padding-top:0;height:0;display:block}.b-image--ratio-16-5{width:100%;padding-bottom:31.25%;padding-top:0;height:0;display:block}.b-image--ratio-9-4{width:100%;padding-bottom:44.44444%;padding-top:0;height:0;display:block}.b-image--ratio-5-4{width:100%;padding-bottom:80%;padding-top:0;height:0;display:block}.b-image--ratio-5-6{width:100%;padding-bottom:120%;padding-top:0;height:0;display:block}.b-image--ratio-6-5{width:100%;padding-bottom:83.33333%;padding-top:0;height:0;display:block}.b-image--ratio-3-2{width:100%;padding-bottom:66.66667%;padding-top:0;height:0;display:block}.b-image--ratio-4-3{width:100%;padding-bottom:75%;padding-top:0;height:0;display:block}.b-image--ratio-2-1{width:100%;padding-bottom:50%;padding-top:0;height:0;display:block}.b-image--square{width:100%;padding-bottom:100%;padding-top:0;height:0;display:block}.b-paragraph{margin-bottom:20px}.b-paragraph--no-spacing{margin:0}.b-paragraph--no-spacing p{margin:0}.b-paragraph--tiny-space{margin:10px 0}.b-paragraph--tiny-space p{margin:10px 0}.b-link{display:inline-block;cursor:pointer;text-decoration:none}.b-link:hover .b-link__text,.b-link:focus .b-link__text{text-decoration:underline}.b-link--block:hover,.b-link--block:focus{text-decoration:none}.b-link--featured{color:#000}.b-link--featured:hover .b-link__text,.b-link--featured:hover .b-icon,.b-link--featured:focus .b-link__text,.b-link--featured:focus .b-icon{color:#ff6900;text-decoration:none}.b-link--normal{text-decoration:underline}.b-rule--heavier-top{border-top:3px solid black}.b-rule--heavy-top{border-top:2px solid black}.b-rule--light-top{border-top:1px solid black}.b-rule--heavy-bottom{border-bottom:2px solid black}.b-rule--light-bottom{border-bottom:1px solid black}.b-rule--bright-top{border-top-color:#969696}.b-rule--bright-bottom{border-bottom-color:#969696}.b-rule--loose-top{padding-top:100px}.b-rule--loose-bottom{padding-bottom:100px}.b-rule--tight-top{padding-top:20px}.b-rule--tight-bottom{padding-bottom:20px}.b-text--align-left{text-align:left}.b-text--align-right{text-align:right}.b-text--align-centre{text-align:center}.b-text--bold{font-family:"Circular Std Bold",Arial;font-weight:bold}.b-text--size-base{font-size:14px}.b-text--size-mid-large{font-size:16px}.b-text--size-large{font-size:18px}.b-text--size-larger{font-size:20px}.b-text--size-largest{font-size:24px}.b-text--upper{text-transform:uppercase}.b-text--color-dark{color:#000}.b-text--color-dark-grey{color:#424242}.b-text--color-white{color:#fff}.b-text--color-orange{color:#ff6900}.b-title{font-family:"Circular Std Bold",Arial;font-weight:bold}.b-title--first{margin-top:0}.b-title--h1{line-height:70px;font-size:60px}.b-title--h2{margin-top:0;margin-bottom:35px;line-height:50px;font-size:50px}.b-title--h3{margin-top:0;margin-bottom:40px;line-height:1;font-size:28px}.b-title--h4{margin-top:0;margin-bottom:30px;line-height:30px;font-size:24px}.b-title--h5{line-height:25px;font-size:18px}.b-animate{animation-duration:1s;animation-fill-mode:both}.b-animate__delay--200ms{animation-delay:200ms}.b-animate__delay--300ms{animation-delay:300ms}.b-animate__delay--400ms{animation-delay:400ms}.b-animate__delay--500ms{animation-delay:500ms}.b-animate__delay--600ms{animation-delay:600ms}.b-animate__delay--700ms{animation-delay:700ms}.b-animate__delay--800ms{animation-delay:800ms}.b-animate__delay--900ms{animation-delay:900ms}.b-animate__delay--1000ms{animation-delay:1000ms}.b-animate__delay--1100ms{animation-delay:1100ms}.b-animate__delay--1200ms{animation-delay:1200ms}.b-animate__delay--1300ms{animation-delay:1300ms}.b-animate__delay--1400ms{animation-delay:1400ms}.b-animate__delay--1500ms{animation-delay:1500ms}.b-animate__delay--1600ms{animation-delay:1600ms}.b-animate__delay--1800ms{animation-delay:1800ms}.b-animate__delay--1800ms{animation-delay:1900ms}.b-animate__duration--fastest{animation-duration:100ms}.b-animate__duration--faster{animation-duration:200ms}.b-animate__duration--fast{animation-duration:400ms}.b-animate__duration--normal{animation-duration:600ms}.b-animate__duration--slow{animation-duration:800ms}.b-animate__duration--slower{animation-duration:1000ms}@keyframes fadeInUpBigAnimation{0%{opacity:0;transform:translateY(2000px);animation-timing-function:cubic-bezier(1, 0, 0, 1)}50%{opacity:0.5;transform:translateY(800px);animation-timing-function:cubic-bezier(1, 0, 0, 1)}100%{opacity:1;transform:translateY(0);animation-timing-function:cubic-bezier(1, 0, 0, 1)}}.b-animate__fade-in-up-big{animation-name:fadeInUpBigAnimation}@keyframes fadeInDownBigAnimation{0%{opacity:0;transform:translateY(-2000px);animation-timing-function:cubic-bezier(1, 0, 0, 1)}50%{opacity:0.5;transform:translateY(-800px);animation-timing-function:cubic-bezier(1, 0, 0, 1)}100%{opacity:1;transform:translateY(0);animation-timing-function:cubic-bezier(1, 0, 0, 1)}}.b-animate__fade-in-down-big{animation-name:fadeInDownBigAnimation}@keyframes fadeInLeftBigAnimation{0%{opacity:0;transform:translateX(-2000px)}50%{opacity:0.4;transform:translateX(-600px)}100%{opacity:1;transform:translateX(0)}}.b-animate__fade-in-left-big{animation-name:fadeInLeftBigAnimation;animation-timing-function:cubic-bezier(0.86, 0, 0.07, 1)}@keyframes fadeInRightBigAnimation{0%{opacity:0;transform:translateX(2000px)}50%{opacity:0.2;transform:translateX(1600px)}100%{opacity:1;transform:translateX(0)}}.b-animate__fade-in-right-big{animation-name:fadeInRightBigAnimation;animation-timing-function:cubic-bezier(0.86, 0, 0.07, 1)}.b-rich-text ul,.b-rich-text ol{padding-left:0;list-style:none}.b-rich-text ul li{position:relative}.b-rich-text ul li:before{position:absolute;left:-25px;top:0;color:#ff6900;font-weight:bold;font-family:Arial;content:'+'}.b-rich-text ul li li{padding-left:25px}.b-rich-text ul li li:before{top:12px;left:0;background:#ff6900;color:#ff6900;width:10px;height:2px;content:''}.b-rich-text ul li li:after{position:absolute;top:0;left:-25px;background-color:#fff;width:25px;height:25px;content:''}.b-bleed--panel-left{position:relative}.b-bleed--panel-left::before{position:absolute;top:0;bottom:0;background-color:#ff6900;z-index:1;width:1000%;content:''}.b-bleed--panel-left::after{position:absolute;bottom:0;background-color:#fff;z-index:2;width:1000%;height:100px;content:''}.b-bleed--panel-left::after,.b-bleed--panel-left::before{right:100%}.b-bleed--panel-right{position:relative}.b-bleed--panel-right::before{position:absolute;top:0;bottom:0;background-color:#ff6900;z-index:1;width:1000%;content:''}.b-bleed--panel-right::after{position:absolute;bottom:0;background-color:#fff;z-index:2;width:1000%;height:100px;content:''}.b-bleed--panel-right::after,.b-bleed--panel-right::before{left:100%}.b-bleed--light::before,.b-bleed--light::after{background-color:#fff}.b-box--loose-top{padding-top:100px}.b-box--loose-right{padding-right:0}@media (min-width: 480px){.b-box--loose-right{padding-right:100px}}.b-box--loose-left{padding-left:0}@media (min-width: 480px){.b-box--loose-left{padding-left:100px}}.b-box--loose-bottom{padding-bottom:75px}@media (min-width: 480px){.b-box--loose-bottom{padding-bottom:100px}}.b-box--tight-top{padding-top:40px}.b-box--tight-bottom{padding-bottom:40px}.b-box--half-loose-top{padding-top:50px}.b-box--half-loose-left{padding-left:50px}.b-box--tiny-left{padding-left:10px}.b-box--tiny-right{padding-right:10px}.b-box--orange-bg{background-color:#ff6900}.b-clip-path--header-menu-bottom{background-color:#fff;width:100%;height:23px;-webkit-clip-path:polygon(100% 0, 100% 100%, 14% 100%, 0 0);clip-path:polygon(100% 0, 100% 100%, 14% 100%, 0 0)}.b-figure{max-width:100%}.b-figure--pull-right{float:right;padding-left:20px}.b-figure--pull-left{float:left;padding-right:20px}.b-link-figure{display:block}.b-link-figure__content-wrapper{position:relative}.b-link-figure__title-icon{position:absolute;left:0;opacity:1}.b-link-figure:focus .b-link-figure__image,.b-link-figure:hover .b-link-figure__image{opacity:0.8}.b-link-figure:focus .b-link-figure__title,.b-link-figure:hover .b-link-figure__title{color:#ff6900}.b-link-figure:focus .b-link-figure__title-icon,.b-link-figure:hover .b-link-figure__title-icon{opacity:1;color:#ff6900}.b-carousel .b-link-figure{margin:10px}.b-list{margin:0;padding:0;list-style:none}.b-list__item{margin-bottom:20px;font-size:16px;list-style-type:none}.b-list__item:last-child{margin-bottom:0}.b-list__item--activated{color:#ff6900}.b-scrollbar--straight-dark::-webkit-scrollbar-track{background-color:#fff}.b-scrollbar--straight-dark::-webkit-scrollbar{width:6px;background-color:#fff}.b-scrollbar--straight-dark::-webkit-scrollbar-thumb{background-color:#000}.b-article-component__image{width:100%}.b-carousel{position:relative}.b-carousel__slide{width:100%}.b-carousel__label{margin-bottom:33px}.b-carousel__button{margin-left:10px}.b-carousel__button--sm-gap{margin-left:5px}@media (min-width: 768px){.b-contact-details--footer{padding-top:5px;padding-left:50px}}.b-contact-details--connect-page{font-size:18px}@media (min-width: 768px){.b-contact-details--connect-page{padding-left:100px}}.b-featured-project{width:auto}@media (min-width: 768px){.b-featured-project--vertical{max-width:350px}}@media (min-width: 992px){.b-featured-project--vertical{max-width:450px}}@media (min-width: 1200px){.b-featured-project--vertical{max-width:500px}}.b-page--practice .b-featured-project-list__column--right .b-featured-project--vertical{float:right}@media (min-width: 768px){.b-featured-project--landscape{max-width:400px}}@media (min-width: 992px){.b-featured-project--landscape{max-width:550px}}@media (min-width: 1200px){.b-featured-project--landscape{max-width:600px}}.b-featured-project__image{margin-bottom:44px}.b-featured-project__icon{opacity:0;top:4px}.b-link-figure .b-featured-project:hover .b-featured-project__icon,.b-link-figure .b-featured-project:focus .b-featured-project__icon{opacity:1}@media (max-width: 767px){.b-featured-project-list__column{width:100%}}.b-footer__top-container{position:relative;background-color:#fff;padding-bottom:30px}@media (min-width: 768px){.b-footer__top-container::after{content:'';position:absolute;background-color:#e6e7e8;top:0;bottom:0;left:100%;width:1000%}}.b-footer__logo-container{position:relative;min-height:70px}.b-footer__logo{position:absolute;top:-20px}.b-footer__featured-link{margin-right:10.6%}.b-footer__main-container{background-color:#e6e7e8}.b-footer__container-wrapper{position:relative}@media (min-width: 768px){.b-footer__copyright{position:absolute;top:80px}}.b-footer__column{width:100%}@media (min-width: 768px){.b-footer__column--left{width:75.5%}}@media (min-width: 768px){.b-footer__column--right{width:24%}}.b-footer__navigation-item{padding-top:6px;margin-bottom:10px}@media (min-width: 768px){.b-footer__navigation-item{display:inline-block;margin-left:20px}.b-footer__navigation-item:first-child{margin-left:0}}.b-gallery-item__content-holder{position:relative}.b-gallery-item__content-holder::before{position:absolute;bottom:0;left:26px;z-index:10;background-image:url(../images/trangle-white.png);background-repeat:no-repeat;width:80px;height:21px;content:''}.b-gallery-item__text-holder{padding:50px}.b-link-figure .b-gallery-item__text-holder{background-color:#e6e7e8;color:#000}.b-link-figure .b-gallery-item__text-holder:hover,.b-link-figure .b-gallery-item__text-holder:focus{background-color:#ff6900;color:#fff}.b-hero{position:relative;overflow:hidden}.b-hero__slide{width:100%;height:700px}@media (min-width: 1200px){.b-hero__slide{height:800px}}.b-page--project--sm-landing-mode .b-hero .b-hero__slide{height:650px}@media (min-width: 1200px){.b-page--project--sm-landing-mode .b-hero .b-hero__slide{height:650px}}.b-header{position:fixed;top:0;left:-50%;z-index:100;margin:auto;margin-left:50%;width:100%;min-height:155px;transition:200ms}.b-header__logo{display:inline-block;vertical-align:top;margin-top:25px}.b-header__menu{display:inline-block;vertical-align:top}.b-header--sticked{position:relative}@media (min-width: 768px){.b-header--sm-landing-mode{position:relative}.b-header--sm-landing-mode.b-header--sticky{position:fixed}}.b-header--sticky{background-color:#fff;box-shadow:0 1px 15px #969696}.b-header-menu{box-sizing:border-box;padding-top:54px;width:300px}@media (max-width: 350px){.b-header-menu{margin-right:-20px}}.b-header-menu__button-group{margin-bottom:30px;padding:0 0 0 25px;text-align:right}.b-header-menu__list{overflow-y:auto;padding:0 0 0 25px;height:450px}.b-header-menu__bottom-shape{position:relative;top:22px;margin-top:-22px}.b-header-menu__list-item{padding-right:5px}.b-header-menu__button{margin-right:30px;color:#fff;font-size:16px}.b-header-menu__button:first-child{margin-left:0}.b-header-menu__button--close{display:none;font-size:12px;margin-right:72px}.b-header-menu__button--activated{color:#ff6900}.b-header--sticky .b-header-menu__button{color:#000}.b-header-menu .b-header-menu__list,.b-header-menu .b-header-menu__bottom-shape{transition:200ms;display:none;opacity:0}.b-header-menu--open{background-color:#fff}.b-header-menu--open .b-header-menu__list,.b-header-menu--open .b-header-menu__bottom-shape{transition:200ms;display:block;opacity:1}.b-header-menu--open .b-header-menu__button{color:#969696}.b-header-menu--open .b-header-menu__button--close{display:inline;color:#000}.b-header-menu--open .b-header-menu__button--activated{color:#ff6900}@media (min-width: 768px){.b-header--sm-landing-mode .b-header-menu__button{color:#000}}.b-introduction{position:relative;z-index:90;background-color:#ff6900;margin-top:-100px;padding:90px 0 80px 20px}@media (min-width: 480px){.b-introduction{padding:90px 40px 80px 60px}}@media (min-width: 768px){.b-introduction{padding:90px 40px 80px 100px}}.b-introduction__wrapper{position:relative;z-index:10}.b-introduction__title{line-height:1.25;color:#fff;font-size:38px}@media (min-width: 480px){.b-introduction__title{font-size:50px}}.b-introduction--tight{padding-left:0;padding-right:0}@media (min-width: 992px){.b-introduction--extra-right-space{padding-right:380px}}.b-introduction--light{background-color:#fff;color:#424242}.b-introduction--light .b-introduction__title{color:#ff6900}.b-introduction--light .b-text--bold{color:#000}.b-introduction--light strong,.b-introduction--light b{color:#000}.b-introduction--top-no-space{padding-top:0}.b-introduction--normal{margin-top:0}.b-introduction--double-padding-bottom{padding-bottom:150px}@media (min-width: 1200px){.b-introduction--double-padding-bottom{padding-bottom:200px}}.b-introduction--offset-top{position:relative}.b-introduction--offset-top::after{position:absolute;bottom:-1px;background-color:white;width:100%;height:100px;content:''}.b-image-introduction{position:relative;z-index:90;padding:0 0 50px 0}@media (min-width: 480px){.b-image-introduction{padding:0 20px 65px 0}}@media (min-width: 768px){.b-image-introduction{padding:90px 0 65px 0}}@media (min-width: 801px){.b-image-introduction{padding-left:60px}}@media (min-width: 1024px){.b-image-introduction{padding:90px 0 65px 80px}}@media (min-width: 1200px){.b-image-introduction{padding:90px 0 65px 100px}}.b-logo{background:url("../images/logo.png");background-size:contain;background-repeat:no-repeat;background-position:center;width:100px;height:113px}.b-logo--small{width:76px;height:85px}.b-logo--white{background:url("../images/logo-white.png");background-size:contain;background-repeat:no-repeat;background-position:center}.b-header--white-log .b-logo{background:url("../images/logo-white.png");background-size:contain;background-repeat:no-repeat;background-position:center}.b-header--sticky .b-logo{background:url("../images/logo.png")}.b-popup{position:fixed;display:none;z-index:1000;width:100%;height:100%;max-height:100%;overflow-y:auto}.b-popup__container{position:relative;margin:auto;padding:75px 70px 70px 70px}.b-popup__button-close{position:absolute;right:70px}.b-popup--show{display:block}.b-popup__title{font-size:50px}.b-page-loading{position:fixed;width:100%;min-width:100%;height:100%;min-height:100%}.b-page-loading__logo-container{position:relative;top:48%;margin:auto;text-align:center}.b-profile-panel__content-holder{transition:200ms;position:relative;box-sizing:border-box;z-index:2;background-color:rgba(255,105,0,0.9);padding:75px 70px 70px 70px;opacity:0}.b-profile-panel__content-holder--square{min-height:400px}@media (min-width: 992px){.b-profile-panel__content-holder--square{min-height:600px}}.b-profile-panel__content-holder--ratio-3-2{min-height:400px}.b-profile-panel__content-holder:hover,.b-profile-panel__content-holder:focus{opacity:1}.b-profile-panel__title{font-size:40px}.b-profile-panel__image-holder{z-index:1}.b-slick .slick-list{position:relative;display:block;overflow:hidden}.b-slick .slick-track{display:block;position:relative;top:0;left:0}.b-slick .slick-slide{float:left}.b-slick .slick-arrow{display:block;position:absolute;padding:0;top:42%;cursor:pointer;border:none;outline:none;font-size:0;line-height:0;background-color:transparent;background-size:cover;width:22px;height:22px}@media (min-width: 1200px){.b-slick .slick-arrow{top:50%}}.b-slick .slick-prev{background-image:url("../images/hero-button-prev.png");z-index:20;left:25px}.b-slick .slick-next{background-image:url("../images/hero-button-next.png");z-index:20;right:25px}.b-project__carousel .slick-arrow{display:none !important}.b-social-share-icon{display:inline-block;position:relative;background-size:contain;width:40px;height:40px}.b-social-share-icon--facebook{background-image:url("../images/icons/svg/facebook.svg")}.b-social-share-icon--facebook:hover,.b-social-share-icon--facebook:focus{background-image:url("../images/icons/svg/facebook_hover.svg")}.b-social-share-icon--linkedin{background-image:url("../images/icons/svg/linkedin.svg")}.b-social-share-icon--linkedin:hover,.b-social-share-icon--linkedin:focus{background-image:url("../images/icons/svg/linkedin_hover.svg")}.b-social-share-icon--twitter{background-image:url("../images/icons/svg/twitter.svg")}.b-social-share-icon--twitter:hover,.b-social-share-icon--twitter:focus{background-image:url("../images/icons/svg/twitter_hover.svg")}.b-social-share-group--media-page{display:inline-block;background-color:#ff6900;padding-top:28px;padding-right:160px;padding-bottom:28px}.b-team-panel__container{padding:75px 70px 70px 70px}.b-team-panel__container--header{padding-top:0}.b-team-panel__header-title{font-size:60px}.b-team-panel__footer-title{font-size:40px}.b-team-panel__header-text{font-size:36px}.b-component{margin-bottom:100px}.b-component--loose{margin-bottom:150px}.b-component--tight{margin-bottom:50px}.b-component--less-tight{margin-bottom:40px}.b-component--with-bottom-content{margin-bottom:92px}.b-component--tiny{margin-bottom:25px}.b-component--very-tiny{margin-bottom:15px}.b-component--no-margin-bottom{margin-bottom:0}.b-component--offset-top{margin-top:-100px}.b-component--invisible{opacity:0}.b-component--header-space{padding-top:256px}.b-container__wrapper{position:relative;margin:auto;padding-left:20px;padding-right:20px;max-width:1200px}@media (min-width: 1200px){.b-container__wrapper{padding-left:0;padding-right:0}}.b-container__wrapper--no-space{padding-left:0;padding-right:0}.b-overlay{position:relative}.b-overlay__background{position:relative}.b-overlay__background:hover .b-overlay__red-filter{z-index:1;height:100%}.b-overlay__foreground{position:absolute;top:0}.b-overlay__foreground--pull-left{right:auto;left:0}.b-overlay__foreground--pull-right{right:0;left:auto}.b-position__container{position:relative}.b-position__child{position:absolute}.b-position__child--top{top:0}.b-position__child--right{right:0}.b-position__child--bottom{bottom:0}.b-position__child--left{left:0}.b-position__child--centre{left:50%}.b-position__wrapper{overflow:auto}.b-position__pull-right{float:right}.b-position__pull-left{float:left}.b-page{position:relative;overflow-x:hidden}.b-page__bottom-link-holder{position:relative}.b-page__bottom-link{display:block;margin-bottom:50px}@media (min-width: 768px){.b-page__bottom-link{position:absolute;bottom:95px;margin-bottom:0}}@media (min-width: 768px){.b-page__bottom-link--right{left:66.667%}}.b-page--practice__introduction{margin-bottom:50px}@media (min-width: 768px){.b-page--practice__introduction{padding-left:60px}}@media (min-width: 801px){.b-page--practice__introduction{padding-left:40px}}@media (min-width: 1024px){.b-page--practice__introduction{padding-left:40px}}@media (min-width: 1200px){.b-page--practice__introduction{padding-left:100px}}.b-page--projects__gallery{margin-top:-50px}.b-page--projects__gallery .grid__cell{padding-left:40px}.b-page--project__introduction--left{margin-bottom:0;padding-top:0}@media (min-width: 768px){.b-page--project__introduction--left{margin-bottom:100px;padding-top:57px;padding-left:40px;padding-right:0;padding-bottom:0}}@media (min-width: 1200px){.b-page--project__introduction--left{padding-left:10px}}.b-page--project__introduction--right{padding-bottom:0;margin-bottom:0}@media (min-width: 992px){.b-page--project__introduction--right{margin-bottom:50px}}.b-page--project__hero-wrapper{padding-left:0;padding-right:0}@media (min-width: 768px){.b-page--project__hero-wrapper{padding-left:20px;padding-right:20px}}.b-page--connect__body-panel{position:relative;z-index:800}.b-page--connect__body-panel-inner{background-color:#fff}.b-page--media__social-share-group-container{background-color:#fff}.b-page--media__social-share-group-container::before{background-color:#fff}
+ */
+/* line 11, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+/* line 18, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.animated.infinite {
+  animation-iteration-count: infinite; }
+
+/* line 23, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.animated.hinge {
+  animation-duration: 2s; }
+
+/* line 28, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s; }
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    transform: translate3d(0, -4px, 0); } }
+
+/* line 92, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom; }
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1; }
+  25%, 75% {
+    opacity: 0; } }
+
+/* line 119, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.flash {
+  animation-name: flash; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+/* line 160, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.pulse {
+  animation-name: pulse; }
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+/* line 239, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rubberBand {
+  animation-name: rubberBand; }
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0); } }
+
+/* line 278, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.shake {
+  animation-name: shake; }
+
+@keyframes headShake {
+  0% {
+    transform: translateX(0); }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg); }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg); }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg); }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg); }
+  50% {
+    transform: translateX(0); } }
+
+/* line 347, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.headShake {
+  animation-timing-function: ease-in-out;
+  animation-name: headShake; }
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg); }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg); }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg); }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg); } }
+
+/* line 408, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.swing {
+  transform-origin: top center;
+  animation-name: swing; }
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1); }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+/* line 469, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.tada {
+  animation-name: tada; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes wobble {
+  from {
+    transform: none; }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  to {
+    transform: none; } }
+
+/* line 550, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.wobble {
+  animation-name: wobble; }
+
+@keyframes jello {
+  from, 11.1%, to {
+    transform: none; }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% {
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
+  88.8% {
+    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+
+/* line 639, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.jello {
+  animation-name: jello;
+  transform-origin: center; }
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+
+/* line 726, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceIn {
+  animation-name: bounceIn; }
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    transform: translate3d(0, -10px, 0); }
+  90% {
+    transform: translate3d(0, 5px, 0); }
+  to {
+    transform: none; } }
+
+/* line 799, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceInDown {
+  animation-name: bounceInDown; }
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0); }
+  75% {
+    transform: translate3d(-10px, 0, 0); }
+  90% {
+    transform: translate3d(5px, 0, 0); }
+  to {
+    transform: none; } }
+
+/* line 872, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceInLeft {
+  animation-name: bounceInLeft; }
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    transform: translate3d(-5px, 0, 0); }
+  to {
+    transform: none; } }
+
+/* line 945, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceInRight {
+  animation-name: bounceInRight; }
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    transform: translate3d(0, -5px, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+/* line 1018, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceInUp {
+  animation-name: bounceInUp; }
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); } }
+
+/* line 1061, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceOut {
+  animation-name: bounceOut; }
+
+@keyframes bounceOutDown {
+  20% {
+    transform: translate3d(0, 10px, 0); }
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); } }
+
+/* line 1104, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceOutDown {
+  animation-name: bounceOutDown; }
+
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0); } }
+
+/* line 1137, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceOutLeft {
+  animation-name: bounceOutLeft; }
+
+@keyframes bounceOutRight {
+  20% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); } }
+
+/* line 1170, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceOutRight {
+  animation-name: bounceOutRight; }
+
+@keyframes bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0); }
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0); }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0); } }
+
+/* line 1213, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.bounceOutUp {
+  animation-name: bounceOutUp; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* line 1238, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeIn {
+  animation-name: fadeIn; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1271, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInDown {
+  animation-name: fadeInDown; }
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1304, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInDownBig {
+  animation-name: fadeInDownBig; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1337, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInLeft {
+  animation-name: fadeInLeft; }
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1370, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInLeftBig {
+  animation-name: fadeInLeftBig; }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1403, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInRight {
+  animation-name: fadeInRight; }
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1436, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInRightBig {
+  animation-name: fadeInRightBig; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1469, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInUp {
+  animation-name: fadeInUp; }
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 1502, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeInUpBig {
+  animation-name: fadeInUpBig; }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+/* line 1527, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); } }
+
+/* line 1556, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutDown {
+  animation-name: fadeOutDown; }
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); } }
+
+/* line 1585, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutDownBig {
+  animation-name: fadeOutDownBig; }
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); } }
+
+/* line 1614, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutLeft {
+  animation-name: fadeOutLeft; }
+
+@keyframes fadeOutLeftBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0); } }
+
+/* line 1643, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutLeftBig {
+  animation-name: fadeOutLeftBig; }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); } }
+
+/* line 1672, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutRight {
+  animation-name: fadeOutRight; }
+
+@keyframes fadeOutRightBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); } }
+
+/* line 1701, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutRightBig {
+  animation-name: fadeOutRightBig; }
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); } }
+
+/* line 1730, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutUp {
+  animation-name: fadeOutUp; }
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0); } }
+
+/* line 1759, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.fadeOutUpBig {
+  animation-name: fadeOutUpBig; }
+
+@keyframes flip {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out; }
+  40% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out; }
+  50% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in; }
+  80% {
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    animation-timing-function: ease-in; }
+  to {
+    transform: perspective(400px);
+    animation-timing-function: ease-in; } }
+
+/* line 1838, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  animation-name: flip; }
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in; }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    transform: perspective(400px); } }
+
+/* line 1911, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInX; }
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in; }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1; }
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
+  to {
+    transform: perspective(400px); } }
+
+/* line 1984, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInY; }
+
+@keyframes flipOutX {
+  from {
+    transform: perspective(400px); }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+/* line 2029, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.flipOutX {
+  animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important; }
+
+@keyframes flipOutY {
+  from {
+    transform: perspective(400px); }
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
+
+/* line 2074, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.flipOutY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipOutY; }
+
+@keyframes lightSpeedIn {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+  60% {
+    transform: skewX(20deg);
+    opacity: 1; }
+  80% {
+    transform: skewX(-5deg);
+    opacity: 1; }
+  to {
+    transform: none;
+    opacity: 1; } }
+
+/* line 2133, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.lightSpeedIn {
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out; }
+
+@keyframes lightSpeedOut {
+  from {
+    opacity: 1; }
+  to {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+
+/* line 2164, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.lightSpeedOut {
+  animation-name: lightSpeedOut;
+  animation-timing-function: ease-in; }
+
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2207, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateIn {
+  animation-name: rotateIn; }
+
+@keyframes rotateInDownLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2248, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateInDownLeft {
+  animation-name: rotateInDownLeft; }
+
+@keyframes rotateInDownRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2289, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateInDownRight {
+  animation-name: rotateInDownRight; }
+
+@keyframes rotateInUpLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2330, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateInUpLeft {
+  animation-name: rotateInUpLeft; }
+
+@keyframes rotateInUpRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0; }
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2371, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateInUpRight {
+  animation-name: rotateInUpRight; }
+
+@keyframes rotateOut {
+  from {
+    transform-origin: center;
+    opacity: 1; }
+  to {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0; } }
+
+/* line 2408, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateOut {
+  animation-name: rotateOut; }
+
+@keyframes rotateOutDownLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1; }
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+
+/* line 2445, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateOutDownLeft {
+  animation-name: rotateOutDownLeft; }
+
+@keyframes rotateOutDownRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1; }
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+/* line 2482, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateOutDownRight {
+  animation-name: rotateOutDownRight; }
+
+@keyframes rotateOutUpLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1; }
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+/* line 2519, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateOutUpLeft {
+  animation-name: rotateOutUpLeft; }
+
+@keyframes rotateOutUpRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1; }
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0; } }
+
+/* line 2556, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rotateOutUpRight {
+  animation-name: rotateOutUpRight; }
+
+@keyframes hinge {
+  0% {
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+  20%, 60% {
+    transform: rotate3d(0, 0, 1, 80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+  40%, 80% {
+    transform: rotate3d(0, 0, 1, 60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+  to {
+    transform: translate3d(0, 700px, 0);
+    opacity: 0; } }
+
+/* line 2629, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.hinge {
+  animation-name: hinge; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+/* line 2664, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rollIn {
+  animation-name: rollIn; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes rollOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+
+/* line 2695, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.rollOut {
+  animation-name: rollOut; }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+/* line 2724, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomIn {
+  animation-name: zoomIn; }
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2765, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomInDown {
+  animation-name: zoomInDown; }
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2806, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomInLeft {
+  animation-name: zoomInLeft; }
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2847, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomInRight {
+  animation-name: zoomInRight; }
+
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2888, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomInUp {
+  animation-name: zoomInUp; }
+
+@keyframes zoomOut {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+
+/* line 2925, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomOut {
+  animation-name: zoomOut; }
+
+@keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  to {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2970, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomOutDown {
+  animation-name: zoomOutDown; }
+
+@keyframes zoomOutLeft {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }
+  to {
+    opacity: 0;
+    transform: scale(0.1) translate3d(-2000px, 0, 0);
+    transform-origin: left center; } }
+
+/* line 3007, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomOutLeft {
+  animation-name: zoomOutLeft; }
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }
+  to {
+    opacity: 0;
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform-origin: right center; } }
+
+/* line 3044, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomOutRight {
+  animation-name: zoomOutRight; }
+
+@keyframes zoomOutUp {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  to {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 3089, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.zoomOutUp {
+  animation-name: zoomOutUp; }
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+/* line 3120, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideInDown {
+  animation-name: slideInDown; }
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+/* line 3151, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideInLeft {
+  animation-name: slideInLeft; }
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+/* line 3182, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideInRight {
+  animation-name: slideInRight; }
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+/* line 3213, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideInUp {
+  animation-name: slideInUp; }
+
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0); } }
+
+/* line 3244, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideOutDown {
+  animation-name: slideOutDown; }
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0); } }
+
+/* line 3275, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideOutLeft {
+  animation-name: slideOutLeft; }
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0); } }
+
+/* line 3306, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideOutRight {
+  animation-name: slideOutRight; }
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0); } }
+
+/* line 3337, /Users/CI/Projects/react-practice/app/styles/animate.css */
+.slideOutUp {
+  animation-name: slideOutUp; }
+
+/*
+Calculating the desired width of a container whist keeping the ratio of width to height fixed. Useful for
+calculating the size of containers designed to display images, with the image specified as a background.
+
+This function has two modes:
+1. Absolute mode ($baseWidth is specified in px, ems, rems) will calculate the correct height given the width and ratio specified and set fixed values
+2. Relative mode ($baseWidth is a percentage) causes the container to scale the height in ratio when the width changes
+*/
+/**
+ * Add a glphyicon to anything!
+ */
+/*
+ * Give elements a nice browser focus appearance (ripped from BS)
+ */
+/*
+ * Reset styles where ul and li elements are being used for semantic meaning, not display. Use sparingly, for compatibility
+ * only and take note that this can unintentionally affect nested lists.
+ */
+/*
+Calculating the desired width of a container whist keeping the ratio of width to height fixed. Useful for
+calculating the size of containers designed to display images, with the image specified as a background.
+
+This function has two modes:
+1. Absolute mode ($baseWidth is specified in px, ems, rems) will calculate the correct height given the width and ratio specified and set fixed values
+2. Relative mode ($baseWidth is a percentage) causes the container to scale the height in ratio when the width changes
+*/
+/**
+ * Add a glphyicon to anything!
+ */
+/*
+ * Give elements a nice browser focus appearance (ripped from BS)
+ */
+/*
+ * Reset styles where ul and li elements are being used for semantic meaning, not display. Use sparingly, for compatibility
+ * only and take note that this can unintentionally affect nested lists.
+ */
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/CircularStd-Medium.eot");
+  src: url("../fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium.woff") format("woff"), url("../fonts/CircularStd-Medium.ttf") format("truetype"), url("../fonts/CircularStd-Medium.svg#CircularStd-Medium") format("svg");
+  font-style: normal;
+  font-weight: "normal";
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("../fonts/CircularStd-Bold.eot");
+  src: url("../fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.ttf") format("truetype"), url("../fonts/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
+  font-style: normal;
+  font-weight: "normal";
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.eot");
+  src: url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype"), url("../fonts/CircularStd-Book.svg#CircularStd-Book") format("svg");
+  font-style: normal;
+  font-weight: "normal";
+  text-rendering: optimizeLegibility; }
+
+/* line 8, /Users/CI/Projects/react-practice/app/styles/main.scss */
+.grid--flush {
+  margin-left: 0; }
+
+/* line 13, /Users/CI/Projects/react-practice/app/styles/main.scss */
+.grid--flush .grid__cell {
+  padding-left: 0; }
+
+/* line 18, /Users/CI/Projects/react-practice/app/styles/main.scss */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Circular Std Book", Arial;
+  background-color: #ffffff; }
+
+/* line 29, /Users/CI/Projects/react-practice/app/styles/main.scss */
+p {
+  margin: 20px 0 20px 0;
+  line-height: 1.4; }
+
+/* line 34, /Users/CI/Projects/react-practice/app/styles/main.scss */
+a {
+  color: #000000; }
+
+/* line 38, /Users/CI/Projects/react-practice/app/styles/main.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/* line 49, /Users/CI/Projects/react-practice/app/styles/main.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/* line 57, /Users/CI/Projects/react-practice/app/styles/main.scss */
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+/* line 59, /Users/CI/Projects/react-practice/app/styles/main.scss */
+* html .clearfix {
+  height: 1%; }
+
+/* line 60, /Users/CI/Projects/react-practice/app/styles/main.scss */
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
+/*
+Calculating the desired width of a container whist keeping the ratio of width to height fixed. Useful for
+calculating the size of containers designed to display images, with the image specified as a background.
+
+This function has two modes:
+1. Absolute mode ($baseWidth is specified in px, ems, rems) will calculate the correct height given the width and ratio specified and set fixed values
+2. Relative mode ($baseWidth is a percentage) causes the container to scale the height in ratio when the width changes
+*/
+/**
+ * Add a glphyicon to anything!
+ */
+/*
+ * Give elements a nice browser focus appearance (ripped from BS)
+ */
+/*
+ * Reset styles where ul and li elements are being used for semantic meaning, not display. Use sparingly, for compatibility
+ * only and take note that this can unintentionally affect nested lists.
+ */
+/*
+Icon
+
+Generic icon with different types (e.g. "b-icon b-icon--search" ). Icons are from two sources, icon font converted from svg and glyphicon font.
+
+<legend>Svg to icon font</legend>
+
+Create SVG/TTF/EOT/WOFF/WOFF2 icon-font and the scss file from SVG icons with Gulp build-iconfont task. See: https://www.npmjs.com/package/gulp-iconfont
+
+<b>Add a new icon</b>
+<ul>
+    <li>Create the svg file for the icon and give the file a proper name, the file name is the css class name (e.g. down-arrow.svg, the css class for the icon is 'b-icon--down-arrow')
+</li>
+    <li>Add the svg file into the '/src/assets/img/icons/svg' folder</li>
+    <li>Run the gulp task 'gulp build-iconfont' in a terminal, it adds the icon into the font files 'src/assets/fonts/icon-font.eot/ttf/woff/woff2', and re-generates the scss file 'src/components/icon/svg2iconfont.scss' via the template 'src/components/icon/template.txt'</li>
+</ul>
+
+
+<b>Update an icon</b>
+<ul>
+    <li>Update the svg file related to the icon in the '/src/assets/img/icons/svg' folder</li>
+    <li>Run the gulp task 'gulp build-iconfont' in a terminal, it updates the font files 'src/assets/fonts/icon-font.eot/ttf/woff/woff2', and re-generates the scss file 'src/components/icon/svg2iconfont.scss' via the template 'src/components/icon/template.txt'</li>
+</ul>
+
+<b>Delete an icon</b>
+<ul>
+    <li>Remove the svg file related to the icon in the '/src/assets/img/icons/svg' folder</li>
+    <li>Run the gulp task 'gulp build-iconfont' in a terminal, it updates the font files 'src/assets/fonts/icon-font.eot/ttf/woff/woff2', and re-generates the scss file 'src/components/icon/svg2iconfont.scss' via the template 'src/components/icon/template.txt'</li>
+</ul>
+
+<legend>Glyphicon library font</legend>
+
+Generate icon font from the Glyphicon library.
+See http://glyphicons.com/
+
+Markup: demo.icon.html
+
+Style guide: Base.Icon
+*/
+/*
+Icon (icon font)
+
+Generic icon with different types (e.g. "b-icon b-icon--search" ).
+
+.b-icon--close - :
+.b-icon--face-book - :
+.b-icon--linkedin - :
+.b-icon--pointer-left - :
+.b-icon--pointer-right - :
+.b-icon--twitter - :
+
+
+Markup: demo.icon.html
+
+Style guide: Blocks.Icon.Icon font
+*/
+@font-face {
+  font-family: "icon-font";
+  src: url("../fonts/icon-font.eot");
+  src: url("../fonts/icon-font.eot?#iefix") format("eot"), url("../fonts/icon-font.woff2") format("woff2"), url("../fonts/icon-font.woff") format("woff"), url("../fonts/icon-font.ttf") format("truetype"), url("../fonts/icon-font.svg#icon-font") format("svg"); }
+
+/* line 46, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--close:before, .b-icon--face-book:before, .b-icon--linkedin:before, .b-icon--pointer-left:before, .b-icon--pointer-right:before, .b-icon--twitter:before {
+  text-transform: none;
+  text-decoration: none;
+  font-family: "icon-font";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal; }
+
+/* line 76, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--close:before {
+  content: ""; }
+
+/* line 76, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--face-book:before {
+  content: ""; }
+
+/* line 76, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--linkedin:before {
+  content: ""; }
+
+/* line 76, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--pointer-left:before {
+  content: ""; }
+
+/* line 76, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--pointer-right:before {
+  content: ""; }
+
+/* line 76, /Users/CI/Projects/react-practice/app/js/components/icon/svg2iconfont.scss */
+.b-icon--twitter:before {
+  content: ""; }
+
+/* line 48, /Users/CI/Projects/react-practice/app/js/components/icon/icon.scss */
+.b-icon {
+  /* -------------- variables --------------- */ }
+  /* line 52, /Users/CI/Projects/react-practice/app/js/components/icon/icon.scss */
+  .b-icon--side-left {
+    margin-right: 5px; }
+  /* line 56, /Users/CI/Projects/react-practice/app/js/components/icon/icon.scss */
+  .b-icon--side-right {
+    margin-left: 5px; }
+  /* line 60, /Users/CI/Projects/react-practice/app/js/components/icon/icon.scss */
+  .b-icon--top-offset {
+    position: relative;
+    top: 2px; }
+
+/*
+Calculating the desired width of a container whist keeping the ratio of width to height fixed. Useful for
+calculating the size of containers designed to display images, with the image specified as a background.
+
+This function has two modes:
+1. Absolute mode ($baseWidth is specified in px, ems, rems) will calculate the correct height given the width and ratio specified and set fixed values
+2. Relative mode ($baseWidth is a percentage) causes the container to scale the height in ratio when the width changes
+*/
+/**
+ * Add a glphyicon to anything!
+ */
+/*
+ * Give elements a nice browser focus appearance (ripped from BS)
+ */
+/*
+ * Reset styles where ul and li elements are being used for semantic meaning, not display. Use sparingly, for compatibility
+ * only and take note that this can unintentionally affect nested lists.
+ */
+/*
+* Image base component
+* Style guide: Base.Image
+*/
+/* line 10, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+.b-image {
+  width: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  /* line 17, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--contain {
+    background-size: contain; }
+  /* line 21, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-7-8 {
+    width: 100%;
+    padding-bottom: 114.28571%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 25, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-16-5 {
+    width: 100%;
+    padding-bottom: 31.25%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 29, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-9-4 {
+    width: 100%;
+    padding-bottom: 44.44444%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 33, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-5-4 {
+    width: 100%;
+    padding-bottom: 80%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 37, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-5-6 {
+    width: 100%;
+    padding-bottom: 120%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 41, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-6-5 {
+    width: 100%;
+    padding-bottom: 83.33333%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 45, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-3-2 {
+    width: 100%;
+    padding-bottom: 66.66667%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 49, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-4-3 {
+    width: 100%;
+    padding-bottom: 75%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 53, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--ratio-2-1 {
+    width: 100%;
+    padding-bottom: 50%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+  /* line 57, /Users/CI/Projects/react-practice/app/js/components/image/image.scss */
+  .b-image--square {
+    width: 100%;
+    padding-bottom: 100%;
+    padding-top: 0;
+    height: 0;
+    display: block; }
+
+/*
+Paragraph text
+
+Defines the base font size and spacing for regular paragraph text.
+
+.b-paragraph--no-spacing: Sets the margins to zero (0)
+
+Markup: demo.paragraph.html
+
+Style guide: Base.Paragraph
+*/
+/* line 15, /Users/CI/Projects/react-practice/app/js/components/paragraph/paragraph.scss */
+.b-paragraph {
+  margin-bottom: 20px; }
+  /* line 18, /Users/CI/Projects/react-practice/app/js/components/paragraph/paragraph.scss */
+  .b-paragraph--no-spacing {
+    margin: 0; }
+    /* line 22, /Users/CI/Projects/react-practice/app/js/components/paragraph/paragraph.scss */
+    .b-paragraph--no-spacing p {
+      margin: 0; }
+  /* line 27, /Users/CI/Projects/react-practice/app/js/components/paragraph/paragraph.scss */
+  .b-paragraph--tiny-space {
+    margin: 10px 0; }
+    /* line 31, /Users/CI/Projects/react-practice/app/js/components/paragraph/paragraph.scss */
+    .b-paragraph--tiny-space p {
+      margin: 10px 0; }
+
+/* line 2, /Users/CI/Projects/react-practice/app/js/components/link/link.scss */
+.b-link {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; }
+  /* line 14, /Users/CI/Projects/react-practice/app/js/components/link/link.scss */
+  .b-link:hover .b-link__text, .b-link:focus .b-link__text {
+    text-decoration: underline; }
+  /* line 20, /Users/CI/Projects/react-practice/app/js/components/link/link.scss */
+  .b-link--block:hover, .b-link--block:focus {
+    text-decoration: none; }
+  /* line 26, /Users/CI/Projects/react-practice/app/js/components/link/link.scss */
+  .b-link--featured {
+    color: #000000; }
+    /* line 32, /Users/CI/Projects/react-practice/app/js/components/link/link.scss */
+    .b-link--featured:hover .b-link__text,
+    .b-link--featured:hover .b-icon, .b-link--featured:focus .b-link__text,
+    .b-link--featured:focus .b-icon {
+      color: #ff6900;
+      text-decoration: none; }
+  /* line 40, /Users/CI/Projects/react-practice/app/js/components/link/link.scss */
+  .b-link--normal {
+    text-decoration: underline; }
+
+/*
+Rule
+
+Rules are dividing lines that can be applied to the top or bottom blocks of content, along with padding, to break pages up and provide clear delineation between components. The thickness, darkeness and surrounding
+padding can be controlled with modifiers. The modifiers provided here are based on the various rule styles used by components in the corporate style guide.
+
+## Examples ##
+
+Larger padding and a thick black line on the top of the block:
+
+```
+<div class="b-rule b-rule--heavy-top b-rule--loose-top">
+	This content will have a thick top border with spacious padding underneath.
+</div>
+```
+
+Less padding and a thin, light grey line on the bottom of the block:
+
+```
+<div class="b-rule b-rule--light-bottom b-rule--bright-bottom b-rule--tight-bottom"></div>
+```
+
+Style guide: Base.Rule
+*/
+/* line 31, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--heavier-top {
+  border-top: 3px solid black; }
+
+/* line 35, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--heavy-top {
+  border-top: 2px solid black; }
+
+/* line 39, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--light-top {
+  border-top: 1px solid black; }
+
+/* line 43, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--heavy-bottom {
+  border-bottom: 2px solid black; }
+
+/* line 47, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--light-bottom {
+  border-bottom: 1px solid black; }
+
+/* line 51, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--bright-top {
+  border-top-color: #969696; }
+
+/* line 55, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--bright-bottom {
+  border-bottom-color: #969696; }
+
+/* line 59, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--loose-top {
+  padding-top: 100px; }
+
+/* line 63, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--loose-bottom {
+  padding-bottom: 100px; }
+
+/* line 67, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--tight-top {
+  padding-top: 20px; }
+
+/* line 71, /Users/CI/Projects/react-practice/app/js/components/rule/rule.scss */
+.b-rule--tight-bottom {
+  padding-bottom: 20px; }
+
+/*
+Text
+
+Generic text modifiers for setting things like colour.
+
+.b-text--align-left - Left-aligns the text
+.b-text--align-right - Right-aligns the text
+.b-text--align-centre - Centre-aligns the text
+.b-text--bold - Bold text
+.b-text--colour-light - Makes text a light colour, according to the theme (e.g. white)
+.b-text--colour-dark - Makes text a dark colour, according to the theme (e.g. black)
+.b-text--colour-orange - Makes text an orange colour, it is for the orange colour text
+.b-text--size-base - Makes the text default body size (14px)
+.b-text--size-large - Makes the text large (16px)
+.b-text--size-larger - Makes the text larger (20px)
+.b-text--upper - Uppercase the text
+
+Markup: demo.text.html
+
+Style guide: Base.Text
+*/
+/* line 26, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--align-left {
+  text-align: left; }
+
+/* line 30, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--align-right {
+  text-align: right; }
+
+/* line 34, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--align-centre {
+  text-align: center; }
+
+/* line 38, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--bold {
+  font-family: "Circular Std Bold", Arial;
+  font-weight: bold; }
+
+/* line 43, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--size-base {
+  font-size: 14px; }
+
+/* line 47, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--size-mid-large {
+  font-size: 16px; }
+
+/* line 51, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--size-large {
+  font-size: 18px; }
+
+/* line 55, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--size-larger {
+  font-size: 20px; }
+
+/* line 59, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--size-largest {
+  font-size: 24px; }
+
+/* line 63, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--upper {
+  text-transform: uppercase; }
+
+/* line 67, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--color-dark {
+  color: #000000; }
+
+/* line 71, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--color-dark-grey {
+  color: #424242; }
+
+/* line 75, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--color-white {
+  color: #ffffff; }
+
+/* line 79, /Users/CI/Projects/react-practice/app/js/components/text/text.scss */
+.b-text--color-orange {
+  color: #ff6900; }
+
+/*
+Title
+
+Titles are specialised headings or heading-like elements with a distinct visual style, intended specifically used as
+the title of a page or component.
+
+.b-title--h1 - Level 1 content heading
+.b-title--h2 - Level 2 content heading
+.b-title--h3 - Level 3 content heading
+.b-title--h4 - Level 4 content heading
+.b-title--h5 - Level 5 content heading
+.b-title--first - Removes the leading (top) margin from the title
+
+Markup: <p class="b-title {{modifier_class}}">This is a title</p>
+
+Style guide: Base.Title
+*/
+/* line 20, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+.b-title {
+  font-family: "Circular Std Bold", Arial;
+  font-weight: bold; }
+  /* line 25, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+  .b-title--first {
+    margin-top: 0; }
+  /* line 29, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+  .b-title--h1 {
+    line-height: 70px;
+    font-size: 60px; }
+  /* line 34, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+  .b-title--h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    line-height: 50px;
+    font-size: 50px; }
+  /* line 41, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+  .b-title--h3 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 1;
+    font-size: 28px; }
+  /* line 48, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+  .b-title--h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 24px; }
+  /* line 55, /Users/CI/Projects/react-practice/app/js/components/title/title.scss */
+  .b-title--h5 {
+    line-height: 25px;
+    font-size: 18px; }
+
+/* line 2, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+.b-animate {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+  /* line 15, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--200ms {
+    animation-delay: 200ms; }
+  /* line 16, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--300ms {
+    animation-delay: 300ms; }
+  /* line 17, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--400ms {
+    animation-delay: 400ms; }
+  /* line 18, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--500ms {
+    animation-delay: 500ms; }
+  /* line 19, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--600ms {
+    animation-delay: 600ms; }
+  /* line 20, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--700ms {
+    animation-delay: 700ms; }
+  /* line 21, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--800ms {
+    animation-delay: 800ms; }
+  /* line 22, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--900ms {
+    animation-delay: 900ms; }
+  /* line 23, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1000ms {
+    animation-delay: 1000ms; }
+  /* line 24, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1100ms {
+    animation-delay: 1100ms; }
+  /* line 25, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1200ms {
+    animation-delay: 1200ms; }
+  /* line 26, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1300ms {
+    animation-delay: 1300ms; }
+  /* line 27, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1400ms {
+    animation-delay: 1400ms; }
+  /* line 28, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1500ms {
+    animation-delay: 1500ms; }
+  /* line 29, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1600ms {
+    animation-delay: 1600ms; }
+  /* line 30, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1800ms {
+    animation-delay: 1800ms; }
+  /* line 31, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__delay--1800ms {
+    animation-delay: 1900ms; }
+  /* line 37, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__duration--fastest {
+    animation-duration: 100ms; }
+  /* line 38, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__duration--faster {
+    animation-duration: 200ms; }
+  /* line 39, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__duration--fast {
+    animation-duration: 400ms; }
+  /* line 40, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__duration--normal {
+    animation-duration: 600ms; }
+  /* line 41, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__duration--slow {
+    animation-duration: 800ms; }
+  /* line 42, /Users/CI/Projects/react-practice/app/js/components/animate/animate.scss */
+  .b-animate__duration--slower {
+    animation-duration: 1000ms; }
+
+@keyframes fadeInUpBigAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+  50% {
+    opacity: 0.5;
+    transform: translateY(800px);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); } }
+
+/* line 23, /Users/CI/Projects/react-practice/app/js/components/animate/fade-in-up-big.scss */
+.b-animate__fade-in-up-big {
+  animation-name: fadeInUpBigAnimation; }
+
+@keyframes fadeInDownBigAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-800px);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); } }
+
+/* line 25, /Users/CI/Projects/react-practice/app/js/components/animate/fade-in-down-big.scss */
+.b-animate__fade-in-down-big {
+  animation-name: fadeInDownBigAnimation; }
+
+@keyframes fadeInLeftBigAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px); }
+  50% {
+    opacity: 0.4;
+    transform: translateX(-600px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* line 18, /Users/CI/Projects/react-practice/app/js/components/animate/fade-in-left-big.scss */
+.b-animate__fade-in-left-big {
+  animation-name: fadeInLeftBigAnimation;
+  /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
+
+@keyframes fadeInRightBigAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px); }
+  50% {
+    opacity: 0.2;
+    transform: translateX(1600px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* line 18, /Users/CI/Projects/react-practice/app/js/components/animate/fade-in-right-big.scss */
+.b-animate__fade-in-right-big {
+  animation-name: fadeInRightBigAnimation;
+  /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
+
+/* line 5, /Users/CI/Projects/react-practice/app/js/components/rich-text/rich-text.scss */
+.b-rich-text ul, .b-rich-text ol {
+  padding-left: 0;
+  list-style: none; }
+
+/* line 10, /Users/CI/Projects/react-practice/app/js/components/rich-text/rich-text.scss */
+.b-rich-text ul li {
+  position: relative; }
+  /* line 13, /Users/CI/Projects/react-practice/app/js/components/rich-text/rich-text.scss */
+  .b-rich-text ul li:before {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    color: #ff6900;
+    font-weight: bold;
+    font-family: Arial;
+    content: '+'; }
+
+/* line 27, /Users/CI/Projects/react-practice/app/js/components/rich-text/rich-text.scss */
+.b-rich-text ul li li {
+  padding-left: 25px; }
+  /* line 30, /Users/CI/Projects/react-practice/app/js/components/rich-text/rich-text.scss */
+  .b-rich-text ul li li:before {
+    top: 12px;
+    left: 0;
+    background: #ff6900;
+    color: #ff6900;
+    width: 10px;
+    height: 2px;
+    content: ''; }
+  /* line 41, /Users/CI/Projects/react-practice/app/js/components/rich-text/rich-text.scss */
+  .b-rich-text ul li li:after {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background-color: #ffffff;
+    width: 25px;
+    height: 25px;
+    content: ''; }
+
+/*
+* Bleed component
+*
+*/
+/* line 35, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+.b-bleed--panel-left {
+  position: relative; }
+  /* line 12, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+  .b-bleed--panel-left::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #ff6900;
+    z-index: 1;
+    width: 1000%;
+    content: ''; }
+  /* line 22, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+  .b-bleed--panel-left::after {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    width: 1000%;
+    height: 100px;
+    content: ''; }
+  /* line 39, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+  .b-bleed--panel-left::after, .b-bleed--panel-left::before {
+    right: 100%; }
+
+/* line 45, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+.b-bleed--panel-right {
+  position: relative; }
+  /* line 12, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+  .b-bleed--panel-right::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #ff6900;
+    z-index: 1;
+    width: 1000%;
+    content: ''; }
+  /* line 22, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+  .b-bleed--panel-right::after {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    width: 1000%;
+    height: 100px;
+    content: ''; }
+  /* line 49, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+  .b-bleed--panel-right::after, .b-bleed--panel-right::before {
+    left: 100%; }
+
+/* line 57, /Users/CI/Projects/react-practice/app/js/components/bleed/bleed.scss */
+.b-bleed--light::before, .b-bleed--light::after {
+  background-color: #ffffff; }
+
+/**
+* Box block controls the box padding space in different sides
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--loose-top {
+  padding-top: 100px; }
+
+/* line 11, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--loose-right {
+  padding-right: 0; }
+  @media (min-width: 480px) {
+    /* line 11, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+    .b-box--loose-right {
+      padding-right: 100px; } }
+
+/* line 19, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--loose-left {
+  padding-left: 0; }
+  @media (min-width: 480px) {
+    /* line 19, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+    .b-box--loose-left {
+      padding-left: 100px; } }
+
+/* line 27, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--loose-bottom {
+  padding-bottom: 75px; }
+  @media (min-width: 480px) {
+    /* line 27, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+    .b-box--loose-bottom {
+      padding-bottom: 100px; } }
+
+/* line 35, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--tight-top {
+  padding-top: 40px; }
+
+/* line 39, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--tight-bottom {
+  padding-bottom: 40px; }
+
+/* line 43, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--half-loose-top {
+  padding-top: 50px; }
+
+/* line 47, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--half-loose-left {
+  padding-left: 50px; }
+
+/* line 51, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--tiny-left {
+  padding-left: 10px; }
+
+/* line 55, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--tiny-right {
+  padding-right: 10px; }
+
+/* line 59, /Users/CI/Projects/react-practice/app/js/components/box/box.scss */
+.b-box--orange-bg {
+  background-color: #ff6900; }
+
+/*
+ * CSS clip path
+ * http://bennettfeely.com/clippy/
+ * Style guide: Blocks.Clip path
+*/
+/* line 11, /Users/CI/Projects/react-practice/app/js/components/clip-path/clip-path.scss */
+.b-clip-path--header-menu-bottom {
+  background-color: #ffffff;
+  width: 100%;
+  height: 23px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 14% 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 14% 100%, 0 0); }
+
+/*
+Calculating the desired width of a container whist keeping the ratio of width to height fixed. Useful for
+calculating the size of containers designed to display images, with the image specified as a background.
+
+This function has two modes:
+1. Absolute mode ($baseWidth is specified in px, ems, rems) will calculate the correct height given the width and ratio specified and set fixed values
+2. Relative mode ($baseWidth is a percentage) causes the container to scale the height in ratio when the width changes
+*/
+/**
+ * Add a glphyicon to anything!
+ */
+/*
+ * Give elements a nice browser focus appearance (ripped from BS)
+ */
+/*
+ * Reset styles where ul and li elements are being used for semantic meaning, not display. Use sparingly, for compatibility
+ * only and take note that this can unintentionally affect nested lists.
+ */
+/*
+Figure
+
+Represents an illustration, usually accompanying a body of text. The figure can be positioned relative to the
+text, occupy a certain amount of space and optionally have an accompanying caption. Includes percentage width
+helpers for CMS-authored content.
+
+Markup: demo.figure.html
+
+Style guide: Blocks.Figure
+*/
+/*
+Figure (Responsive image)
+
+Represents figure with responsive image (Switching between 2 images desktop and vertical tablet/mobile).
+
+Markup: demo.figure.responsive.html
+
+Style guide: Blocks.Figure.Responsive
+*/
+/*
+Bleed image (auto-bleed)
+
+Markup: demo.figure.bleed-style.auto.html
+
+Style guide: Blocks.Bleed.Auto
+*/
+/*
+Bleed image (bleed left/right)
+
+.b-box--bleed-left - Box bleeds out to the left
+.b-box--bleed-right - Box bleeds out to the right
+
+Markup: demo.figure.bleed-style-lr.html
+
+Style guide: Components.Bleed
+*/
+/* line 45, /Users/CI/Projects/react-practice/app/js/components/figure/figure.scss */
+.b-figure {
+  max-width: 100%; }
+  /* line 48, /Users/CI/Projects/react-practice/app/js/components/figure/figure.scss */
+  .b-figure--pull-right {
+    float: right;
+    padding-left: 20px; }
+  /* line 53, /Users/CI/Projects/react-practice/app/js/components/figure/figure.scss */
+  .b-figure--pull-left {
+    float: left;
+    padding-right: 20px; }
+
+/**
+* Link figure block
+* Style guide: Blocks.Link figure
+*/
+/* line 6, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+.b-link-figure {
+  display: block; }
+  /* line 9, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+  .b-link-figure__content-wrapper {
+    position: relative; }
+  /* line 17, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+  .b-link-figure__title-icon {
+    position: absolute;
+    left: 0;
+    opacity: 1; }
+  /* line 27, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+  .b-link-figure:focus .b-link-figure__image, .b-link-figure:hover .b-link-figure__image {
+    opacity: 0.8; }
+  /* line 31, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+  .b-link-figure:focus .b-link-figure__title, .b-link-figure:hover .b-link-figure__title {
+    color: #ff6900; }
+  /* line 35, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+  .b-link-figure:focus .b-link-figure__title-icon, .b-link-figure:hover .b-link-figure__title-icon {
+    opacity: 1;
+    color: #ff6900; }
+  /* line 41, /Users/CI/Projects/react-practice/app/js/components/link-figure/link-figure.scss */
+  .b-carousel .b-link-figure {
+    margin: 10px; }
+
+/*
+List base
+.b-list--loose - loose list
+.b-list--tight - tight list
+
+Style guide: Blocks.List
+*/
+/* line 10, /Users/CI/Projects/react-practice/app/js/components/list/list.scss */
+.b-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 16, /Users/CI/Projects/react-practice/app/js/components/list/list.scss */
+  .b-list__item {
+    margin-bottom: 20px;
+    font-size: 16px;
+    list-style-type: none; }
+    /* line 21, /Users/CI/Projects/react-practice/app/js/components/list/list.scss */
+    .b-list__item:last-child {
+      margin-bottom: 0; }
+    /* line 25, /Users/CI/Projects/react-practice/app/js/components/list/list.scss */
+    .b-list__item--activated {
+      color: #ff6900; }
+
+/**
+* Scrollbar
+* https://codepen.io/GhostRider/pen/GHaFw
+* Style guide: Blocks.SScrollbar
+*/
+/* line 12, /Users/CI/Projects/react-practice/app/js/components/scrollbar/scrollbar.scss */
+.b-scrollbar--straight-dark::-webkit-scrollbar-track {
+  background-color: #ffffff; }
+
+/* line 16, /Users/CI/Projects/react-practice/app/js/components/scrollbar/scrollbar.scss */
+.b-scrollbar--straight-dark::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ffffff; }
+
+/* line 21, /Users/CI/Projects/react-practice/app/js/components/scrollbar/scrollbar.scss */
+.b-scrollbar--straight-dark::-webkit-scrollbar-thumb {
+  background-color: #000000; }
+
+/* line 10, /Users/CI/Projects/react-practice/app/js/components/article-component/article-component.scss */
+.b-article-component__image {
+  width: 100%; }
+
+/**
+* Hero media component
+* @see http://kenwheeler.github.io/slick/
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/carousel/carousel.scss */
+.b-carousel {
+  position: relative; }
+  /* line 10, /Users/CI/Projects/react-practice/app/js/components/carousel/carousel.scss */
+  .b-carousel__slide {
+    width: 100%; }
+  /* line 14, /Users/CI/Projects/react-practice/app/js/components/carousel/carousel.scss */
+  .b-carousel__label {
+    margin-bottom: 33px; }
+  /* line 18, /Users/CI/Projects/react-practice/app/js/components/carousel/carousel.scss */
+  .b-carousel__button {
+    margin-left: 10px; }
+    /* line 21, /Users/CI/Projects/react-practice/app/js/components/carousel/carousel.scss */
+    .b-carousel__button--sm-gap {
+      margin-left: 5px; }
+
+/**
+* contact details style
+*
+*/
+@media (min-width: 768px) {
+  /* line 8, /Users/CI/Projects/react-practice/app/js/components/contact-details/contact-details.scss */
+  .b-contact-details--footer {
+    padding-top: 5px;
+    padding-left: 50px; } }
+
+/* line 16, /Users/CI/Projects/react-practice/app/js/components/contact-details/contact-details.scss */
+.b-contact-details--connect-page {
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    /* line 16, /Users/CI/Projects/react-practice/app/js/components/contact-details/contact-details.scss */
+    .b-contact-details--connect-page {
+      padding-left: 100px; } }
+
+/**
+*  home page featured project
+*/
+/* line 5, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+.b-featured-project {
+  width: auto; }
+  @media (min-width: 768px) {
+    /* line 9, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+    .b-featured-project--vertical {
+      max-width: 350px; } }
+  @media (min-width: 992px) {
+    /* line 9, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+    .b-featured-project--vertical {
+      max-width: 450px; } }
+  @media (min-width: 1200px) {
+    /* line 9, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+    .b-featured-project--vertical {
+      max-width: 500px; } }
+  /* line 24, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+  .b-page--practice .b-featured-project-list__column--right .b-featured-project--vertical {
+    float: right; }
+  @media (min-width: 768px) {
+    /* line 29, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+    .b-featured-project--landscape {
+      max-width: 400px; } }
+  @media (min-width: 992px) {
+    /* line 29, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+    .b-featured-project--landscape {
+      max-width: 550px; } }
+  @media (min-width: 1200px) {
+    /* line 29, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+    .b-featured-project--landscape {
+      max-width: 600px; } }
+  /* line 44, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+  .b-featured-project__image {
+    margin-bottom: 44px; }
+  /* line 48, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+  .b-featured-project__icon {
+    opacity: 0;
+    top: 4px; }
+  /* line 57, /Users/CI/Projects/react-practice/app/js/components/featured-project/featured-project.scss */
+  .b-link-figure .b-featured-project:hover .b-featured-project__icon, .b-link-figure .b-featured-project:focus .b-featured-project__icon {
+    opacity: 1; }
+
+/**
+* Featured project list component
+*
+* Style guide: Components.Featured project list
+*/
+@media (max-width: 767px) {
+  /* line 10, /Users/CI/Projects/react-practice/app/js/components/featured-project-list/featured-project-list.scss */
+  .b-featured-project-list__column {
+    width: 100%; } }
+
+/*
+ * Footer component
+ * Style guide: Components.footer
+*/
+/* line 11, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__top-container {
+  position: relative;
+  background-color: #ffffff;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    /* line 18, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+    .b-footer__top-container::after {
+      content: '';
+      position: absolute;
+      background-color: #e6e7e8;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 1000%; } }
+
+/* line 31, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__logo-container {
+  position: relative;
+  min-height: 70px; }
+
+/* line 36, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__logo {
+  position: absolute;
+  top: -20px; }
+
+/* line 41, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__featured-link {
+  margin-right: 10.6%; }
+
+/* line 45, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__main-container {
+  background-color: #e6e7e8; }
+
+/* line 49, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__container-wrapper {
+  position: relative; }
+
+@media (min-width: 768px) {
+  /* line 53, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+  .b-footer__copyright {
+    position: absolute;
+    top: 80px; } }
+
+/* line 62, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__column {
+  width: 100%; }
+  @media (min-width: 768px) {
+    /* line 66, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+    .b-footer__column--left {
+      width: 75.5%; } }
+  @media (min-width: 768px) {
+    /* line 74, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+    .b-footer__column--right {
+      width: 24%; } }
+
+/* line 83, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+.b-footer__navigation-item {
+  padding-top: 6px;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    /* line 83, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+    .b-footer__navigation-item {
+      display: inline-block;
+      margin-left: 20px; }
+      /* line 92, /Users/CI/Projects/react-practice/app/js/components/footer/footer.scss */
+      .b-footer__navigation-item:first-child {
+        margin-left: 0; } }
+
+/* line 3, /Users/CI/Projects/react-practice/app/js/components/gallery-item/gallery-item.scss */
+.b-gallery-item__content-holder {
+  position: relative; }
+  /* line 6, /Users/CI/Projects/react-practice/app/js/components/gallery-item/gallery-item.scss */
+  .b-gallery-item__content-holder::before {
+    position: absolute;
+    bottom: 0;
+    left: 26px;
+    z-index: 10;
+    background-image: url(../images/trangle-white.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 21px;
+    content: ''; }
+
+/* line 20, /Users/CI/Projects/react-practice/app/js/components/gallery-item/gallery-item.scss */
+.b-gallery-item__text-holder {
+  padding: 50px; }
+  /* line 23, /Users/CI/Projects/react-practice/app/js/components/gallery-item/gallery-item.scss */
+  .b-link-figure .b-gallery-item__text-holder {
+    background-color: #e6e7e8;
+    color: #000000; }
+    /* line 27, /Users/CI/Projects/react-practice/app/js/components/gallery-item/gallery-item.scss */
+    .b-link-figure .b-gallery-item__text-holder:hover, .b-link-figure .b-gallery-item__text-holder:focus {
+      background-color: #ff6900;
+      color: #ffffff; }
+
+/**
+* Hero media component
+* @see http://kenwheeler.github.io/slick/
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/hero/hero.scss */
+.b-hero {
+  position: relative;
+  overflow: hidden; }
+  /* line 11, /Users/CI/Projects/react-practice/app/js/components/hero/hero.scss */
+  .b-hero__slide {
+    width: 100%;
+    height: 700px; }
+    @media (min-width: 1200px) {
+      /* line 11, /Users/CI/Projects/react-practice/app/js/components/hero/hero.scss */
+      .b-hero__slide {
+        height: 800px; } }
+  /* line 23, /Users/CI/Projects/react-practice/app/js/components/hero/hero.scss */
+  .b-page--project--sm-landing-mode .b-hero .b-hero__slide {
+    height: 650px; }
+    @media (min-width: 1200px) {
+      /* line 23, /Users/CI/Projects/react-practice/app/js/components/hero/hero.scss */
+      .b-page--project--sm-landing-mode .b-hero .b-hero__slide {
+        height: 650px; } }
+
+/**
+* Global header component
+*
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+.b-header {
+  position: fixed;
+  top: 0;
+  left: -50%;
+  z-index: 100;
+  margin: auto;
+  margin-left: 50%;
+  width: 100%;
+  min-height: 155px;
+  transition: 200ms; }
+  /* line 18, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+  .b-header__logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px; }
+  /* line 24, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+  .b-header__menu {
+    display: inline-block;
+    vertical-align: top; }
+  /* line 29, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+  .b-header--sticked {
+    position: relative; }
+  @media (min-width: 768px) {
+    /* line 33, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+    .b-header--sm-landing-mode {
+      position: relative; }
+      /* line 38, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+      .b-header--sm-landing-mode.b-header--sticky {
+        position: fixed; } }
+  /* line 45, /Users/CI/Projects/react-practice/app/js/components/header/header.scss */
+  .b-header--sticky {
+    background-color: #ffffff;
+    box-shadow: 0 1px 15px #969696; }
+
+/* line 3, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+.b-header-menu {
+  box-sizing: border-box;
+  padding-top: 54px;
+  width: 300px; }
+  @media (max-width: 350px) {
+    /* line 3, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu {
+      margin-right: -20px; } }
+  /* line 12, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu__button-group {
+    margin-bottom: 30px;
+    padding: 0 0 0 25px;
+    text-align: right; }
+  /* line 18, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu__list {
+    overflow-y: auto;
+    padding: 0 0 0 25px;
+    height: 450px; }
+  /* line 24, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu__bottom-shape {
+    position: relative;
+    top: 22px;
+    margin-top: -22px; }
+  /* line 30, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu__list-item {
+    padding-right: 5px; }
+  /* line 34, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu__button {
+    margin-right: 30px;
+    color: #ffffff;
+    font-size: 16px; }
+    /* line 39, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu__button:first-child {
+      margin-left: 0; }
+    /* line 43, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu__button--close {
+      display: none;
+      font-size: 12px;
+      margin-right: 72px; }
+    /* line 49, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu__button--activated {
+      color: #ff6900; }
+    /* line 53, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header--sticky .b-header-menu__button {
+      color: #000000; }
+  /* line 60, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu .b-header-menu__list,
+  .b-header-menu .b-header-menu__bottom-shape {
+    transition: 200ms;
+    display: none;
+    opacity: 0; }
+  /* line 67, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+  .b-header-menu--open {
+    background-color: #ffffff; }
+    /* line 70, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu--open .b-header-menu__list,
+    .b-header-menu--open .b-header-menu__bottom-shape {
+      transition: 200ms;
+      display: block;
+      opacity: 1; }
+    /* line 77, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu--open .b-header-menu__button {
+      color: #969696; }
+    /* line 81, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu--open .b-header-menu__button--close {
+      display: inline;
+      color: #000000; }
+    /* line 86, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header-menu--open .b-header-menu__button--activated {
+      color: #ff6900; }
+  @media (min-width: 768px) {
+    /* line 92, /Users/CI/Projects/react-practice/app/js/components/header-menu/header-menu.scss */
+    .b-header--sm-landing-mode .b-header-menu__button {
+      color: #000000; } }
+
+/*
+ * Introduction panel
+ * Style guide: Components.Container
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+.b-introduction {
+  position: relative;
+  z-index: 90;
+  background-color: #ff6900;
+  margin-top: -100px;
+  padding: 90px 0 80px 20px; }
+  @media (min-width: 480px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction {
+      padding: 90px 40px 80px 60px; } }
+  @media (min-width: 768px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction {
+      padding: 90px 40px 80px 100px; } }
+  /* line 22, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction__wrapper {
+    position: relative;
+    z-index: 10; }
+  /* line 27, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction__title {
+    line-height: 1.25;
+    color: #ffffff;
+    font-size: 38px; }
+    @media (min-width: 480px) {
+      /* line 27, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+      .b-introduction__title {
+        font-size: 50px; } }
+  /* line 38, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction--tight {
+    padding-left: 0;
+    padding-right: 0; }
+  @media (min-width: 992px) {
+    /* line 44, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction--extra-right-space {
+      padding-right: 380px; } }
+  /* line 52, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction--light {
+    background-color: #ffffff;
+    color: #424242; }
+    /* line 56, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction--light .b-introduction__title {
+      color: #ff6900; }
+    /* line 60, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction--light .b-text--bold {
+      color: #000000; }
+    /* line 65, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction--light strong, .b-introduction--light b {
+      color: #000000; }
+  /* line 71, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction--top-no-space {
+    padding-top: 0; }
+  /* line 75, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction--normal {
+    margin-top: 0; }
+  /* line 79, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction--double-padding-bottom {
+    padding-bottom: 150px; }
+    @media (min-width: 1200px) {
+      /* line 79, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+      .b-introduction--double-padding-bottom {
+        padding-bottom: 200px; } }
+  /* line 87, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+  .b-introduction--offset-top {
+    position: relative; }
+    /* line 90, /Users/CI/Projects/react-practice/app/js/components/introduction/introduction.scss */
+    .b-introduction--offset-top::after {
+      position: absolute;
+      bottom: -1px;
+      background-color: white;
+      width: 100%;
+      height: 100px;
+      content: ''; }
+
+/*
+ * Introduction panel
+ * Style guide: Components.Container
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/image-introduction/image-introduction.scss */
+.b-image-introduction {
+  position: relative;
+  z-index: 90;
+  padding: 0 0 50px 0; }
+  @media (min-width: 480px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/image-introduction/image-introduction.scss */
+    .b-image-introduction {
+      padding: 0 20px 65px 0; } }
+  @media (min-width: 768px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/image-introduction/image-introduction.scss */
+    .b-image-introduction {
+      padding: 90px 0 65px 0; } }
+  @media (min-width: 801px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/image-introduction/image-introduction.scss */
+    .b-image-introduction {
+      padding-left: 60px; } }
+  @media (min-width: 1024px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/image-introduction/image-introduction.scss */
+    .b-image-introduction {
+      padding: 90px 0 65px 80px; } }
+  @media (min-width: 1200px) {
+    /* line 7, /Users/CI/Projects/react-practice/app/js/components/image-introduction/image-introduction.scss */
+    .b-image-introduction {
+      padding: 90px 0 65px 100px; } }
+
+/* line 3, /Users/CI/Projects/react-practice/app/js/components/logo/logo.scss */
+.b-logo {
+  background: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 113px; }
+  /* line 14, /Users/CI/Projects/react-practice/app/js/components/logo/logo.scss */
+  .b-logo--small {
+    width: 76px;
+    height: 85px; }
+  /* line 19, /Users/CI/Projects/react-practice/app/js/components/logo/logo.scss */
+  .b-logo--white {
+    background: url("../images/logo-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  /* line 26, /Users/CI/Projects/react-practice/app/js/components/logo/logo.scss */
+  .b-header--white-log .b-logo {
+    background: url("../images/logo-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  /* line 35, /Users/CI/Projects/react-practice/app/js/components/logo/logo.scss */
+  .b-header--sticky .b-logo {
+    background: url("../images/logo.png"); }
+
+/* line 3, /Users/CI/Projects/react-practice/app/js/components/popup/popup.scss */
+.b-popup {
+  position: fixed;
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto; }
+  /* line 12, /Users/CI/Projects/react-practice/app/js/components/popup/popup.scss */
+  .b-popup__container {
+    position: relative;
+    margin: auto;
+    padding: 75px 70px 70px 70px; }
+  /* line 18, /Users/CI/Projects/react-practice/app/js/components/popup/popup.scss */
+  .b-popup__button-close {
+    position: absolute;
+    right: 70px; }
+  /* line 23, /Users/CI/Projects/react-practice/app/js/components/popup/popup.scss */
+  .b-popup--show {
+    display: block; }
+  /* line 27, /Users/CI/Projects/react-practice/app/js/components/popup/popup.scss */
+  .b-popup__title {
+    font-size: 50px; }
+
+/*
+ * Page loading component
+ * Style guide: Components.Container
+*/
+/* line 7, /Users/CI/Projects/react-practice/app/js/components/page-loading/page-loading.scss */
+.b-page-loading {
+  position: fixed;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%; }
+  /* line 14, /Users/CI/Projects/react-practice/app/js/components/page-loading/page-loading.scss */
+  .b-page-loading__logo-container {
+    position: relative;
+    top: 48%;
+    margin: auto;
+    text-align: center; }
+
+/* line 4, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+.b-profile-panel__content-holder {
+  transition: 200ms;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+  background-color: rgba(255, 105, 0, 0.9);
+  padding: 75px 70px 70px 70px;
+  opacity: 0; }
+  /* line 13, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+  .b-profile-panel__content-holder--square {
+    min-height: 400px; }
+    @media (min-width: 992px) {
+      /* line 13, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+      .b-profile-panel__content-holder--square {
+        min-height: 600px; } }
+  /* line 21, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+  .b-profile-panel__content-holder--ratio-3-2 {
+    min-height: 400px; }
+  /* line 25, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+  .b-profile-panel__content-holder:hover, .b-profile-panel__content-holder:focus {
+    opacity: 1; }
+
+/* line 31, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+.b-profile-panel__title {
+  font-size: 40px; }
+
+/* line 35, /Users/CI/Projects/react-practice/app/js/components/profile-panel/profile-panel.scss */
+.b-profile-panel__image-holder {
+  z-index: 1; }
+
+/* override slick button styles
+ *
+ */
+/* line 10, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-slick .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+
+/* line 16, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-slick .slick-track {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+/* line 23, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-slick .slick-slide {
+  float: left; }
+
+/* line 27, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-slick .slick-arrow {
+  display: block;
+  position: absolute;
+  padding: 0;
+  top: 42%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  background-size: cover;
+  width: 22px;
+  height: 22px; }
+  @media (min-width: 1200px) {
+    /* line 27, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+    .b-slick .slick-arrow {
+      top: 50%; } }
+
+/* line 48, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-slick .slick-prev {
+  background-image: url("../images/hero-button-prev.png");
+  z-index: 20;
+  left: 25px; }
+
+/* line 54, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-slick .slick-next {
+  background-image: url("../images/hero-button-next.png");
+  z-index: 20;
+  right: 25px; }
+
+/* line 62, /Users/CI/Projects/react-practice/app/js/components/slick-override/slick-override.scss */
+.b-project__carousel .slick-arrow {
+  display: none !important; }
+
+/**
+* Social share icon
+
+*/
+/* line 5, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+.b-social-share-icon {
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+  width: 40px;
+  height: 40px; }
+  /* line 13, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+  .b-social-share-icon--facebook {
+    background-image: url("../images/icons/svg/facebook.svg"); }
+    /* line 16, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+    .b-social-share-icon--facebook:hover, .b-social-share-icon--facebook:focus {
+      background-image: url("../images/icons/svg/facebook_hover.svg"); }
+  /* line 22, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+  .b-social-share-icon--linkedin {
+    background-image: url("../images/icons/svg/linkedin.svg"); }
+    /* line 25, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+    .b-social-share-icon--linkedin:hover, .b-social-share-icon--linkedin:focus {
+      background-image: url("../images/icons/svg/linkedin_hover.svg"); }
+  /* line 31, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+  .b-social-share-icon--twitter {
+    background-image: url("../images/icons/svg/twitter.svg"); }
+    /* line 34, /Users/CI/Projects/react-practice/app/js/components/social-share-icon/social-share-icon.scss */
+    .b-social-share-icon--twitter:hover, .b-social-share-icon--twitter:focus {
+      background-image: url("../images/icons/svg/twitter_hover.svg"); }
+
+/* line 5, /Users/CI/Projects/react-practice/app/js/components/social-share-group/social-share-group.scss */
+.b-social-share-group--media-page {
+  display: inline-block;
+  background-color: #ff6900;
+  padding-top: 28px;
+  padding-right: 160px;
+  padding-bottom: 28px; }
+
+/* line 4, /Users/CI/Projects/react-practice/app/js/components/team-panel/team-panel.scss */
+.b-team-panel__container {
+  padding: 75px 70px 70px 70px; }
+  /* line 7, /Users/CI/Projects/react-practice/app/js/components/team-panel/team-panel.scss */
+  .b-team-panel__container--header {
+    padding-top: 0; }
+
+/* line 17, /Users/CI/Projects/react-practice/app/js/components/team-panel/team-panel.scss */
+.b-team-panel__header-title {
+  font-size: 60px; }
+
+/* line 21, /Users/CI/Projects/react-practice/app/js/components/team-panel/team-panel.scss */
+.b-team-panel__footer-title {
+  font-size: 40px; }
+
+/* line 25, /Users/CI/Projects/react-practice/app/js/components/team-panel/team-panel.scss */
+.b-team-panel__header-text {
+  font-size: 36px; }
+
+/*
+Component block
+
+Applies vertical spacing between components.
+
+.b-component--loose - Increased spacing
+.b-component--tight - Reduced spacing
+
+Markup:
+<div style="background:lightpink;">
+    <div class="b-component {{modifier_class}} b-box b-box--grey" style="height:100px;">My component</div>
+    <p>Next component</p>
+</div>
+
+Style guide: Layout.Component
+*/
+/* line 19, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+.b-component {
+  margin-bottom: 100px; }
+  /* line 23, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--loose {
+    margin-bottom: 150px; }
+  /* line 27, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--tight {
+    margin-bottom: 50px; }
+  /* line 31, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--less-tight {
+    margin-bottom: 40px; }
+  /* line 36, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--with-bottom-content {
+    margin-bottom: 92px; }
+  /* line 40, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--tiny {
+    margin-bottom: 25px; }
+  /* line 44, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--very-tiny {
+    margin-bottom: 15px; }
+  /* line 48, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--no-margin-bottom {
+    margin-bottom: 0; }
+  /* line 52, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--offset-top {
+    margin-top: -100px; }
+  /* line 56, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--invisible {
+    opacity: 0; }
+  /* line 60, /Users/CI/Projects/react-practice/app/js/components/component/component.scss */
+  .b-component--header-space {
+    padding-top: 256px; }
+
+/*
+Page main container, it uses to restrict the size of the content body
+
+<b>b-form-container__wrapper</b><br/>
+It wraps main content body in a max width zone
+
+
+Style guide: Layout.Container
+*/
+/* line 14, /Users/CI/Projects/react-practice/app/js/components/container/container.scss */
+.b-container__wrapper {
+  position: relative;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px; }
+  @media (min-width: 1200px) {
+    /* line 14, /Users/CI/Projects/react-practice/app/js/components/container/container.scss */
+    .b-container__wrapper {
+      padding-left: 0;
+      padding-right: 0; } }
+  /* line 26, /Users/CI/Projects/react-practice/app/js/components/container/container.scss */
+  .b-container__wrapper--no-space {
+    padding-left: 0;
+    padding-right: 0; }
+
+/*
+* Grid system
+* Style guide: Layout.Grid
+*
+*/
+/*
+Overlay
+
+Utility/layout block that allows a foreground object to be placed on top of a background object. It is not
+ opinionated about margins/padding, sizes, colours etc and it expects these to be set by another block.
+
+.b-overlay__foreground--pull-left - Forces the overlay to display to the left side
+.b-overlay__foreground--pull-right - Forces the overlay to display to the right side
+
+Markup: demo.overlay.html
+
+Style guide: Layout.Overlay
+*/
+/* line 17, /Users/CI/Projects/react-practice/app/js/components/overlay/overlay.scss */
+.b-overlay {
+  position: relative; }
+  /* line 20, /Users/CI/Projects/react-practice/app/js/components/overlay/overlay.scss */
+  .b-overlay__background {
+    position: relative; }
+    /* line 24, /Users/CI/Projects/react-practice/app/js/components/overlay/overlay.scss */
+    .b-overlay__background:hover .b-overlay__red-filter {
+      z-index: 1;
+      height: 100%; }
+  /* line 32, /Users/CI/Projects/react-practice/app/js/components/overlay/overlay.scss */
+  .b-overlay__foreground {
+    position: absolute;
+    top: 0; }
+    /* line 36, /Users/CI/Projects/react-practice/app/js/components/overlay/overlay.scss */
+    .b-overlay__foreground--pull-left {
+      right: auto;
+      left: 0; }
+    /* line 41, /Users/CI/Projects/react-practice/app/js/components/overlay/overlay.scss */
+    .b-overlay__foreground--pull-right {
+      right: 0;
+      left: auto; }
+
+/*
+Position block
+
+Generic positioning of container blocks and child elements.
+
+.b-position__container - parent positioned relatively
+.b-position__pull-right - make the element to float right
+.b-position__pull-left - make the element to float left
+
+Markup:
+<div class="b-position__container b-box b-box--red">
+    My component
+    <i class="b-icon b-icon--logo b-position__child b-position__child--top b-position__child--right"></i>
+</div>
+
+Style guide: Layout.Position
+*/
+/* line 22, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+.b-position__container {
+  position: relative; }
+
+/* line 26, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+.b-position__child {
+  position: absolute; }
+  /* line 29, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+  .b-position__child--top {
+    top: 0; }
+  /* line 33, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+  .b-position__child--right {
+    right: 0; }
+  /* line 37, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+  .b-position__child--bottom {
+    bottom: 0; }
+  /* line 41, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+  .b-position__child--left {
+    left: 0; }
+  /* line 45, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+  .b-position__child--centre {
+    left: 50%; }
+
+/* line 50, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+.b-position__wrapper {
+  overflow: auto; }
+
+/* line 55, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+.b-position__pull-right {
+  float: right; }
+
+/* line 59, /Users/CI/Projects/react-practice/app/js/components/position/position.scss */
+.b-position__pull-left {
+  float: left; }
+
+/*
+Page layout and structure
+
+Style guide: Layout.Page
+*/
+/* line 8, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+.b-page {
+  position: relative;
+  overflow-x: hidden; }
+  /* line 12, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page__bottom-link-holder {
+    position: relative; }
+  /* line 16, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page__bottom-link {
+    display: block;
+    margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      /* line 16, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page__bottom-link {
+        position: absolute;
+        bottom: 95px;
+        margin-bottom: 0; } }
+    @media (min-width: 768px) {
+      /* line 26, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page__bottom-link--right {
+        left: 66.667%; } }
+  /* line 37, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--practice__introduction {
+    margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      /* line 37, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--practice__introduction {
+        padding-left: 60px; } }
+    @media (min-width: 801px) {
+      /* line 37, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--practice__introduction {
+        padding-left: 40px; } }
+    @media (min-width: 1024px) {
+      /* line 37, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--practice__introduction {
+        padding-left: 40px; } }
+    @media (min-width: 1200px) {
+      /* line 37, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--practice__introduction {
+        padding-left: 100px; } }
+  /* line 60, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--projects__gallery {
+    margin-top: -50px; }
+    /* line 63, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+    .b-page--projects__gallery .grid__cell {
+      padding-left: 40px; }
+  /* line 75, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--project__introduction--left {
+    margin-bottom: 0;
+    padding-top: 0; }
+    @media (min-width: 768px) {
+      /* line 75, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--project__introduction--left {
+        margin-bottom: 100px;
+        padding-top: 57px;
+        padding-left: 40px;
+        padding-right: 0;
+        padding-bottom: 0; } }
+    @media (min-width: 1200px) {
+      /* line 75, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--project__introduction--left {
+        padding-left: 10px; } }
+  /* line 93, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--project__introduction--right {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+    @media (min-width: 992px) {
+      /* line 93, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--project__introduction--right {
+        margin-bottom: 50px; } }
+  /* line 108, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--project__hero-wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      /* line 108, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+      .b-page--project__hero-wrapper {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  /* line 122, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--connect__body-panel {
+    position: relative;
+    z-index: 800; }
+  /* line 127, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--connect__body-panel-inner {
+    background-color: #ffffff; }
+  /* line 134, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+  .b-page--media__social-share-group-container {
+    background-color: #ffffff; }
+    /* line 138, /Users/CI/Projects/react-practice/app/js/components/page/page.scss */
+    .b-page--media__social-share-group-container::before {
+      background-color: #ffffff; }
+
+/*# sourceMappingURL=main.css.map */

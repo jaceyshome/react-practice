@@ -28,7 +28,7 @@ class PracticePage extends Page {
     constructor(props) {
         super(props);
         this.pageKey = 'practice';
-        this.nextPage = 'studio';
+        this.nextPage = 'home';
         this.handleWayPointEnter = this.handleWayPointEnter.bind(this);
         this.state = {
             enteredWayPoint: false

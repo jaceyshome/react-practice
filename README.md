@@ -1,6 +1,6 @@
 react-practice
 ==============
-A React practice project
+A ReactJs project designed by a friend
 
 ## Setup ##
 ```
